@@ -1,0 +1,13 @@
+// Nagłówki
+.heading__secondary {
+  @include secondaryHeading;
+  @media screen and (max-width: 768px) {
+    @include secondaryHeading-mobile;
+  }
+}
+.heading__main {
+  @include mainHeading;
+  @media screen and (max-width: 768px) {
+    @include mainHeading-mobile;
+  }
+}

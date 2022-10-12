@@ -1,0 +1,22 @@
+// Mapa kolorów, jeśli się spodoba, trzeba tu dopisać wszystkie, na razie nie marnowałem czasu, nie wiedząc czy się przyjmie :)
+$colors: (
+  // kolory powtarzające się;
+  // kolor kółek tła w headerze oraz mniejszych headingów
+  'secondaryColor': #ffa5ba,
+  'whiteColor': white,
+
+  // kolory tekstu
+  'mainTextColor': #d41443,
+
+  // kolory tła
+  'mainHeaderColor': #ffb8ca,
+  'backgroundSectionColor': #fff5f6,
+
+  // buttons
+  'buttonBackground': #d41342
+);
+
+// Tu naywamy funkcję jako "getColor" i nadajemy atrybut co ona ma robić $key. Ma wejść i wziąć z mapy o nawie $colors klucz o nazwie $key - aby przywołać w pliku scss wpisujemy np. h1 {color: getColor("mainHeadingColor");}
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
