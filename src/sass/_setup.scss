@@ -15,22 +15,21 @@ $font-size-desktop: 14px;
 
 // font colors
 
-$font-white: #FFF;
-$font-black: #000;
-$font-grey: #907E82;
-$font-pink: #FFA5BA;
-$font-cherry: #D41443;
+$font-color-primary: #FFF;
+$font-color-secondary: #000;
+$font-color-subtitle: #907E82;
+$font-header-before: #FFA5BA;
+$font-header: #D41443;
 
 // background colors
 
-$background-header: #FFB8CA;
-$background-products: #E5E5E5;
-$background-how: #FFF5F6;
+$background-color-header: #FFB8CA;
+$background-color-products: #E5E5E5;
+$background-color-how: #FFF5F6;
 
 // products grid colors
 
-$ice-cream-color: #FFB8CA;
-$ice-coffee-color: #F0D1A5;
-$milkshakes-color: #C2E297;
+$background-color-icecream: #FFB8CA;
+$background-color-icecoffee: #F0D1A5;
+$background-color-milkshakes: #C2E297;
 
-// 
