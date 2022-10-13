@@ -1,0 +1,35 @@
+.contacts {
+  background-color: $background-color-header;
+
+  &__card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    height: 427px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 43px 20px 43px 20px;
+  }
+
+  &__category {
+    background-color: $background-color-icecoffee;
+    padding: 0px 15px 0px 15px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    &--foodtruck {
+      background-color: $background-color-milkshakes;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
