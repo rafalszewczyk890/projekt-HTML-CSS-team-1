@@ -1,13 +1,55 @@
 // Nagłówki
-.heading__secondary {
-  @include secondaryHeading;
-  @media screen and (max-width: 768px) {
-    @include secondaryHeading-mobile;
+.about {
+  background-color: $background-color-how;
+}
+.heading {
+  @include flexCenter(column);
+  margin: 0 auto 26px;
+  padding-top: 125px;
+  &__secondary {
+    @include secondaryHeading;
+    @media screen and (max-width: 768px) {
+      @include secondaryHeading-mobile;
+    }
+    margin-bottom: 15px;
+  }
+  &__main {
+    @include mainHeading;
+    @media screen and (max-width: 768px) {
+      @include mainHeading-mobile;
+    }
+    margin: 0 auto;
   }
 }
-.heading__main {
-  @include mainHeading;
-  @media screen and (max-width: 768px) {
-    @include mainHeading-mobile;
+.about-description {
+  min-width: 280px;
+  &__image {
+    min-width: 280px;
+    width: 100%;
+    margin: 0 20px;
+    @include flexCenter;
+  }
+  &__text {
+    padding: 0 50px;
+    @include articleText-mobile;
+    &--main {
+      margin-top: 46px;
+      margin-bottom: 47px;
+      color: $color-secondary;
+    }
+    &--secondary {
+      margin-bottom: 47px;
+      color: $font-color-subtitle;
+    }
+  }
+}
+.flex-center {
+  @include flexCenter;
+}
+.about-achievements {
+  @include flexCenter;
+
+  &__list {
+    @include flexCenter(row);
   }
 }

@@ -22,6 +22,18 @@ body {
     width: 1040px;
   }
 }
+.about {
+  background-color: #fff5f6;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 26px;
+  padding-top: 125px;
+}
 .heading__secondary {
   font-family: "Titan One";
   font-style: normal;
@@ -29,6 +41,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #d41443;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
   .heading__secondary {
@@ -36,7 +49,6 @@ body {
     line-height: 0.857;
   }
 }
-
 .heading__main {
   font-family: "Titan One";
   font-style: normal;
@@ -45,12 +57,63 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .heading__main {
     font-size: 34px;
     line-height: 1.147;
   }
+}
+
+.about-description {
+  min-width: 280px;
+}
+.about-description__image {
+  min-width: 280px;
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.about-description__text {
+  padding: 0 50px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+.about-description__text--main {
+  margin-top: 46px;
+  margin-bottom: 47px;
+  color: #000;
+}
+.about-description__text--secondary {
+  margin-bottom: 47px;
+  color: #907e82;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.about-achievements__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .button {
