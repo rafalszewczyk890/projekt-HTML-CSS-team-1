@@ -1,0 +1,16 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .products {
+    &__title {
+      text-align: center;
+    }
+
+    &__secondheader {
+      @include secondaryHeading;
+      @include secondaryHeading-mobile;
+    }
+    &__header {
+      @include mainHeading;
+      @include mainHeading-mobile;
+    }
+  }
+}
