@@ -28,6 +28,14 @@
   font-size: 34px;
   line-height: 1.147;
 }
+@mixin articleText-mobile {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+// mixin nadający elemetowi wycentrowanie
 @mixin flexCenter($direction: row) {
   display: flex;
   justify-content: center;
