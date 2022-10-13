@@ -259,6 +259,7 @@ footer {
   gap: 24px;
 }
 .footer__icon {
+  text-decoration: none;
   width: 34px;
   height: 34px;
   background-color: #ffa5ba;
