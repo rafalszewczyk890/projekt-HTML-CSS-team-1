@@ -2,6 +2,7 @@ body {
   font-size: 14px;
 }
 
+
 // majority font sizes
 
 $font-size-mobile: 14px;
@@ -13,13 +14,15 @@ $font-size-tablet-secondary: 8px;
 $font-size-desktop: 16px;
 $font-size-desktop: 14px;
 
+$font-size-footer:30px;
+
 // main colors
 
 $color-primary: #fff;
 $color-secondary: #000;
 
 // font colors
-
+$font-footer-tittle: rgba(255, 165, 186, 1);
 $font-color-subtitle: #907e82;
 $font-header-before: #d41443;
 $font-header: #ffa5ba;
@@ -31,6 +34,7 @@ $background-color-products: #e5e5e5;
 $background-color-how: #fff5f6;
 $background-color-button: #d41342;
 $boder-mobile: #e18298;
+$background-footer:rgba(255, 245, 246, 1);
 
 // products grid colors
 
