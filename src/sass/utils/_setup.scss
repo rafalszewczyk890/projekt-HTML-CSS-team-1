@@ -2,44 +2,7 @@ body {
   font-size: 14px;
 }
 
-// resets
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-p,
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
 // majority font sizes
 
@@ -51,6 +14,8 @@ $font-size-tablet-secondary: 8px;
 
 $font-size-desktop: 16px;
 $font-size-desktop: 14px;
+
+$font-size-footer:30px;
 
 // main colors
 
@@ -69,8 +34,6 @@ $background-color-header: #ffb8ca;
 $background-color-products: #e5e5e5;
 $background-color-how: #fff5f6;
 $background-color-button: #d41342;
-$boder-mobile: #e18298;
-
 // products grid colors
 
 $background-color-icecream: #ffb8ca;
