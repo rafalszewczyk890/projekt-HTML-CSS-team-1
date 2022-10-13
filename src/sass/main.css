@@ -259,8 +259,9 @@ footer {
   gap: 24px;
 }
 .footer__icon {
-  width: 100%;
-  height: 100%;
+  text-decoration: none;
+  width: 34px;
+  height: 34px;
   background-color: #ffa5ba;
   border-radius: 50%;
   fill: #fff;
@@ -270,4 +271,19 @@ footer {
 .footer__icon:hover,
 .footer __icon :focus {
   color: blueviolet;
+}
+.footer__contact {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
