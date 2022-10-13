@@ -2,6 +2,26 @@ body {
   font-size: 14px;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1040px;
+  }
+}
 .heading__secondary {
   font-family: "Titan One";
   font-style: normal;
@@ -31,4 +51,16 @@ body {
     font-size: 34px;
     line-height: 1.147;
   }
+}
+
+.button {
+  border-radius: 22px;
+}
+.button--bright {
+  background: #fff;
+  color: #d41443;
+}
+.button--color {
+  background: #d41342;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

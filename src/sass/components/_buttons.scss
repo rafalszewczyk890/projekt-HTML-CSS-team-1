@@ -1,11 +1,11 @@
 .button {
   border-radius: 22px;
   &--bright {
-    background: getColor('whiteColor');
-    color: getColor('mainTextColor');
+    background: $color-primary;
+    color: $font-header;
   }
   &--color {
-    background: getColor('buttonBackground');
-    color: getColor('whiteColor');
+    background: $background-color-button;
+    color: $color-primary;
   }
 }
