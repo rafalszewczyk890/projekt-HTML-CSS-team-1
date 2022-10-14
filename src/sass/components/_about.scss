@@ -50,6 +50,7 @@
   @include flexCenter;
 
   &__list {
-    @include flexCenter(row);
+    @include flexCenter(column);
   }
+  &__icon {width:fit-content}
 }
