@@ -138,6 +138,8 @@ a {
 }
 @media screen and (max-width: 768px) {
   .about-description__text--secondary {
+    z-index: 2;
+    position: relative;
     background-image: url(../../images/about-milk1x.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -219,7 +221,7 @@ a {
     line-height: 0.866;
   }
   .heading__main {
-    font-size: 55px;
+    font-size: 54px;
     line-height: 1.145;
   }
   .about-description {
@@ -267,6 +269,41 @@ a {
     margin-top: 13px;
     font-size: 14px;
     line-height: 1.74;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading__secondary {
+    font-size: 30px;
+    line-height: 0.882;
+  }
+  .heading__main {
+    font-size: 58px;
+    line-height: 0.878;
+  }
+  .about-description {
+    background-image: url(../../images/about-milk1x.png);
+    z-index: 2;
+    position: relative;
+  }
+  .about-description__image {
+    width: 516px;
+    height: 516px;
+  }
+  .about-description__text {
+    margin-left: 74px;
+    width: 463px;
+  }
+  .flex-center {
+    justify-content: flex-start;
+  }
+  .about-achievements {
+    gap: 30px;
+  }
+  .about-achievements__items {
+    width: 330px;
+  }
+  .about-achievements__numbers {
+    font-size: 58px;
   }
 }
 .button {

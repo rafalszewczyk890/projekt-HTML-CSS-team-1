@@ -46,6 +46,8 @@
       margin-bottom: 47px;
       color: $font-color-subtitle;
       @media screen and (max-width: 768px) {
+        z-index: 2;
+        position: relative;
         background-image: url(../../images/about-milk1x.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -150,12 +152,48 @@
       margin-bottom: 36px;
     }
     &__numbers {
-      font-size: $font-size-tablet-numbers;
-      line-height: 1.145;
+      @include numbersAchievements-tablet;
     }
     &__description {
       margin-top: 13px;
-      @include description-achievements;
+      @include descriptionAchievements-tablet;
+    }
+  }
+}
+
+// Wersja na desktop
+@media screen and (min-width: 1200px) {
+  .heading {
+    &__secondary {
+      @include secondaryHeading-desktop;
+    }
+    &__main {
+      @include mainHeading-desktop;
+    }
+  }
+  .about-description {
+    background-image: url(../../images/about-milk1x.png);
+    z-index: 2;
+    position: relative;
+    &__image {
+      width: 516px;
+      height: 516px;
+    }
+    &__text {
+      margin-left: 74px;
+      width: 463px;
+    }
+  }
+  .flex-center {
+    justify-content: flex-start;
+  }
+  .about-achievements {
+    gap: 30px;
+    &__items {
+      width: 330px;
+    }
+    &__numbers {
+      font-size: $font-size-desktop-numbers;
     }
   }
 }
