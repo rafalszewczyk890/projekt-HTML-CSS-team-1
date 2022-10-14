@@ -150,7 +150,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+}
+.about-achievements__icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .button {
@@ -191,35 +196,72 @@ a {
     line-height: 1.147;
   }
 }
-.contacts {
-  background-color: #ffb8ca;
-}
-.contacts__card {
+footer {
+  background-color: #fff5f6;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-  height: 427px;
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding-top: 43px 20px 43px 20px;
 }
-.contacts__category {
-  background-color: #f0d1a5;
-  padding: 0px 15px 0px 15px;
-  border-radius: 5px;
-  color: white;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 186%;
-}
-.contacts__category--foodtruck {
-  background-color: #c2e297;
-}
-.contacts__list {
+
+.footer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer__tittle {
+  font-family: Titan One;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.133;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffa5ba;
+  text-transform: uppercase;
+}
+.footer__text {
+  font-family: Titan One;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.137;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #d41443;
+  text-transform: uppercase;
+}
+.footer__icons {
+  display: flex;
+  gap: 24px;
+}
+.footer__icon {
+  text-decoration: none;
+  width: 34px;
+  height: 34px;
+  background-color: #ffa5ba;
+  border-radius: 50%;
+  fill: #fff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__icon:hover,
+.footer __icon :focus {
+  color: blueviolet;
+}
+.footer__contact {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

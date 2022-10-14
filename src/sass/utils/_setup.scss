@@ -2,8 +2,6 @@ body {
   font-size: 14px;
 }
 
-// resets
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -52,6 +50,8 @@ $font-size-tablet-secondary: 8px;
 $font-size-desktop: 16px;
 $font-size-desktop: 14px;
 
+$font-size-footer: 30px;
+
 // main colors
 
 $color-primary: #fff;
@@ -69,8 +69,6 @@ $background-color-header: #ffb8ca;
 $background-color-products: #e5e5e5;
 $background-color-how: #fff5f6;
 $background-color-button: #d41342;
-$boder-mobile: #e18298;
-
 // products grid colors
 
 $background-color-icecream: #ffb8ca;
