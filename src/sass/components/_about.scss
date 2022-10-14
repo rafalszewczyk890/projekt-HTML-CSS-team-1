@@ -1,7 +1,9 @@
 // Nagłówki
 .about {
   background-color: $background-color-how;
+  padding-bottom: 145px;
 }
+
 .heading {
   @include flexCenter(column);
   margin: 0 auto 26px;
@@ -26,8 +28,11 @@
   &__image {
     min-width: 280px;
     width: 100%;
-    margin: 0 20px;
+    // margin: 0 20px;
     @include flexCenter;
+    &-item {
+      height: 100%;
+    }
   }
   &__text {
     padding: 0 50px;
@@ -40,17 +45,55 @@
     &--secondary {
       margin-bottom: 47px;
       color: $font-color-subtitle;
+      @media screen and (max-width: 768px) {
+        background-image: url(../../images/about-milk1x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../images/about-milk2x.png);
+      }
     }
   }
+}
+.button__vector {
+  margin-left: 13.62px;
 }
 .flex-center {
   @include flexCenter;
 }
 .about-achievements {
   @include flexCenter;
-
+  margin-top: 39px;
+  &__items {
+    max-width: 230px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
   &__list {
     @include flexCenter(column);
   }
-  &__icon {width:fit-content}
+  &__icon {
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+  &__numbers {
+    @include mainHeading;
+    text-align: left;
+    font-size: 36px;
+    line-height: 0.878;
+    height: 56px;
+  }
+  &__description {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: $font-size-mobile-secondary;
+    line-height: 1.7;
+    color: $color-secondary;
+  }
 }
