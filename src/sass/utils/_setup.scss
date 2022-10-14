@@ -2,7 +2,42 @@ body {
   font-size: 14px;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 // majority font sizes
 
@@ -15,7 +50,7 @@ $font-size-tablet-secondary: 8px;
 $font-size-desktop: 16px;
 $font-size-desktop: 14px;
 
-$font-size-footer:30px;
+$font-size-footer: 30px;
 
 // main colors
 
