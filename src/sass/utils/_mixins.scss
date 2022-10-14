@@ -35,6 +35,24 @@
   font-size: 12px;
   line-height: 1.62;
 }
+
+// Rozmiary headingów dla tablets
+@mixin secondaryHeading-tablet {
+  font-size: $font-size-tablet-heading-secondary;
+  line-height: 0.866;
+}
+@mixin mainHeading-tablet {
+  font-size: 55px;
+  line-height: 1.145;
+}
+@mixin articleText-tablet {
+  font-size: 14px;
+  line-height: 1.76;
+}
+@mixin description-achievements {
+  font-size: 14px;
+  line-height: 1.74;
+}
 // mixin nadający elemetowi wycentrowanie
 @mixin flexCenter($direction: row) {
   display: flex;

@@ -85,7 +85,7 @@
   &__numbers {
     @include mainHeading;
     text-align: left;
-    font-size: 36px;
+    font-size: $font-size-mobile-numbers;
     line-height: 0.878;
     height: 56px;
   }
@@ -95,5 +95,67 @@
     font-size: $font-size-mobile-secondary;
     line-height: 1.7;
     color: $color-secondary;
+  }
+}
+
+// ustawienia na tablet
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-bottom: 140px;
+  }
+  .heading {
+    margin-bottom: 50px;
+    padding-top: 130px;
+    &__secondary {
+      @include secondaryHeading-tablet;
+    }
+    &__main {
+      @include mainHeading-tablet;
+    }
+  }
+  .about-description {
+    @include flexCenter(row);
+    margin: 0 auto;
+
+    &__image {
+      align-self: flex-start;
+      width: 340px;
+      height: 339px;
+    }
+    &__text {
+      padding-left: 17px;
+      padding-right: 0px;
+      width: 340px;
+      @include articleText-tablet;
+      &--main {
+        margin-bottom: 49px;
+      }
+      &--secondary {
+        margin-bottom: 62px;
+      }
+    }
+  }
+  .about-achievements {
+    &__list {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 60px;
+    }
+    &__items {
+      width: 180px;
+    }
+    &__icon {
+      margin-bottom: 36px;
+    }
+    &__numbers {
+      font-size: $font-size-tablet-numbers;
+      line-height: 1.145;
+    }
+    &__description {
+      margin-top: 13px;
+      @include description-achievements;
+    }
   }
 }
