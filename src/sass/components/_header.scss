@@ -1,55 +1,88 @@
 .header {
   background-color: $background-color-header;
+  padding: 6px 20px 0 20px;
+  height: 502px;
+  min-width: 320px;
+
   &__container {
     display: none;
   }
-  &__image {
+
+  &__primary--image {
     position: absolute;
     z-index: 2;
     top: 92px;
     right: 32px;
+    height: 410px;
+    width: 171px;
+  }
+
+  &__secondary--image {
+    display: none;
+  }
+
+  &__tertiary--image {
+    display: none;
   }
 }
+
 .box {
   display: none;
 }
+
 .menu {
+  min-width: 320px;
+
   &__logo {
-    margin: 6px 0 0 20px;
+    width: 199px;
+    height: 50px;
   }
+
   &__list {
     display: none;
   }
+
   &__button {
     display: none;
   }
+
+  &__button:hover {
+    background-color: #ecebeb;
+    cursor: pointer;
+  }
 }
+
 .block {
   display: flex;
   flex-direction: column;
-  margin: 137px 0 122px 20px;
+  margin: 137px 0 141px 0;
   max-width: 218px;
   gap: 19px;
   line-height: 35px;
+
   &__header {
     margin: 0;
     z-index: 3;
     top: 0;
   }
+
   &__header-lower {
     @include mainHeading;
     font-size: 30px;
     color: $color-primary;
   }
+
   &__header-higher {
     @include mainHeading;
     font-size: 48px;
   }
+
   &__box {
     display: flex;
     gap: 8px;
     z-index: 3;
   }
+
   &__button-first,
   &__button-second {
     height: 24px;
@@ -59,26 +92,438 @@
     display: flex;
     align-items: center;
   }
-  &__button-first{
+
+  &__button-first {
     background-color: $font-header-before;
     color: $color-primary;
   }
+
+  &__button-first:hover {
+    background-color: $dot;
+    cursor: pointer;
+  }
+
   &__button-second {
     background-color: $color-primary;
     color: $font-header-before;
   }
-  &__button-first:hover,
-  &__button-second:hover{
+
+  &__button-second:hover {
+    background-color: #ecebeb;
     cursor: pointer;
   }
 }
+
 .circle {
   width: 345px;
   height: 345px;
   background-color: $font-header;
   position: absolute;
-  z-index: 1;
   border-radius: 50%;
   top: 83px;
   right: -62px;
+}
+
+.icon--circle {
+  display: none;
+}
+
+.icon--arrow {
+  display: none;
+}
+
+.backdrop {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  transition: ease-in-out 500ms;
+  z-index: 6;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: $background-color-header;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+  }
+  &__button {
+    display: block;
+    width: 160px;
+    height: 44px;
+    background-color: $color-primary;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $font-header-before;
+    position: relative;
+    top: 10px;
+    right: -360px;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    background-color: #ecebeb;
+  }
+
+  &__header {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 22px;
+    color: $color-primary;
+    line-height: 1.3;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 13px;
+    color: $color-primary;
+    line-height: 1.3;
+  }
+  &__input {
+    width: 320px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 13px;
+    color: $font-header-before;
+    line-height: 1.3;
+  }
+  &__textarea {
+    width: 320px;
+    height: 150px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 13px;
+    color: $font-header-before;
+    line-height: 1.3;
+  }
+  &__acceptance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+  }
+  &__acceptance-label {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 13px;
+    color: $color-primary;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+  }
+  &__acceptance-input{
+    margin-right: 5px;
+  }
+  &__link{
+    color: $font-header-before;
+  }
+  &__submit{
+    width: 160px;
+      height: 44px;
+      background-color: $background-color-milkshakes;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: $color-primary;
+  }
+  &__submit:hover{
+    cursor: pointer;
+    background-color: $color-primary;
+    color: $font-header-before;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+      display: block;
+      width: 160px;
+      height: 44px;
+      background-color: $color-primary;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: $font-header-before;
+    }
+  }
+
+  .block {
+    margin: 15px 0 44px 0;
+    max-width: 162px;
+
+    &__header-lower {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+
+    &__header-higher {
+      font-size: 34px;
+      line-height: 1.14;
+    }
+  }
+
+  .circle {
+    width: 323px;
+    height: 323px;
+    top: 31px;
+    right: 137px;
+  }
+
+  .header {
+    padding: 37px 34px 0 34px;
+    height: 399px;
+
+    &__primary--image {
+      top: 63px;
+      right: 247px;
+      height: 336px;
+      width: 143px;
+    }
+
+    &__secondary--image {
+      display: block;
+      width: 124px;
+      height: 126px;
+      position: absolute;
+      top: 245px;
+      left: 34px;
+    }
+
+    &__tertiary--image {
+      display: block;
+      width: 168px;
+      height: 133px;
+      position: absolute;
+      top: 266px;
+      right: 34px;
+      z-index: 4;
+    }
+
+    &__container {
+      display: block;
+      max-width: 114px;
+      max-height: 48px;
+      margin-left: 120px;
+    }
+
+    &__paragraph {
+      font-style: 'DM Sans';
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $color-primary;
+      letter-spacing: 0.06em;
+      text-align: left;
+    }
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 96px;
+    right: 44px;
+    text-align: right;
+
+    &__amount {
+      font-family: 'Titan One';
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1;
+      color: $font-header-before;
+      z-index: 4;
+    }
+
+    &__description {
+      font-family: 'DM Sans';
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1;
+      color: $color-primary;
+    }
+
+    &__icon {
+      height: 16px;
+      width: 16px;
+      fill: $color-primary;
+      display: block;
+      position: relative;
+      top: 10px;
+      right: -34px;
+      z-index: -1;
+    }
+  }
+
+  .icon--circle {
+    display: block;
+    fill: $color-primary;
+    margin-left: 120px;
+    margin-top: 7px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 37px 115px 0 46px;
+    height: 665px;
+
+    &__primary--image {
+      top: 108px;
+      right: 450px;
+      height: 557px;
+      width: 236px;
+    }
+
+    &__secondary--image {
+      width: 188px;
+      height: 191px;
+      top: 429px;
+      left: 77px;
+    }
+
+    &__tertiary--image {
+      width: 293px;
+      height: 232px;
+      top: 433px;
+      right: 109px;
+    }
+
+    &__container {
+      max-width: 200px;
+      max-height: 78px;
+      margin-left: 249px;
+    }
+
+    &__paragraph {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  .menu {
+    &__navigation {
+      display: flex;
+      align-items: center;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 35px;
+      z-index: 2;
+    }
+
+    &__item {
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 16px;
+      color: $color-primary;
+      line-height: 1.3;
+    }
+
+    &__item:first-child {
+      color: $font-header-before;
+    }
+
+    &__item:hover {
+      cursor: pointer;
+      color: $font-header-before;
+    }
+  }
+
+  .circle {
+    width: 538px;
+    height: 538px;
+    top: 52px;
+    right: 267px;
+  }
+
+  .box {
+    top: 160px;
+    right: 115px;
+
+    &__amount {
+      font-size: 46px;
+      line-height: 1.1;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 1.1;
+    }
+
+    &__icon {
+      height: 30px;
+      width: 30px;
+      top: 24px;
+      right: -60px;
+    }
+  }
+
+  .block {
+    margin: 84px 0 112px 69px;
+    max-width: 277px;
+    gap: 25px;
+
+    &__box {
+      gap: 15px;
+    }
+
+    &__header-lower {
+      font-size: 38px;
+    }
+
+    &__header-higher {
+      font-size: 58px;
+    }
+
+    &__button-first,
+    &__button-second {
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  .icon--circle {
+    margin-left: 249px;
+    width: 26px;
+    height: 26px;
+  }
 }
