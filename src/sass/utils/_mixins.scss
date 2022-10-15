@@ -35,6 +35,48 @@
   font-size: 12px;
   line-height: 1.62;
 }
+
+// Rozmiary fontów dla tablets
+@mixin secondaryHeading-tablet {
+  font-size: $font-size-tablet-heading-secondary;
+  line-height: 0.866;
+}
+@mixin mainHeading-tablet {
+  font-size: $font-size-tablet-heading-main;
+  line-height: 1.145;
+}
+@mixin articleText-tablet {
+  font-size: $font-size-main;
+  line-height: 1.76;
+}
+@mixin numbersAchievements-tablet {
+  font-size: $font-size-tablet-numbers;
+  line-height: 1.145;
+}
+@mixin descriptionAchievements-tablet {
+  font-size: $font-size-main;
+  line-height: 1.74;
+}
+
+// Rozmiary na desktop
+
+@mixin secondaryHeading-desktop {
+  font-size: $font-size-desktop-heading-secondary;
+  line-height: 0.882;
+}
+@mixin mainHeading-desktop {
+  font-size: $font-size-desktop-heading-main;
+  line-height: 0.878;
+}
+@mixin articleText-desktop {
+  font-size: $font-size-main;
+  line-height: 1.76;
+}
+@mixin descriptionAchievements-desktop {
+  font-size: $font-size-desktop-achievements;
+  line-height: 1.76;
+}
+
 // mixin nadający elemetowi wycentrowanie
 @mixin flexCenter($direction: row) {
   display: flex;
