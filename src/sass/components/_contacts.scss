@@ -1,7 +1,7 @@
 .contacts {
   background-color: $background-color-contacts;
-  padding-top: 120px;
-  padding-bottom: 165px;
+  padding-top: 86px;
+  padding-bottom: 113px;
 
   &__card {
     width: 100%;
@@ -103,6 +103,8 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
+    padding-top: 132px;
+    padding-bottom: 165px;
     &__list {
       flex-wrap: nowrap;
       gap: 20px;
@@ -120,6 +122,25 @@
       justify-content: center;
       margin: 0;
       gap: 15px;
+    }
+
+    &__category {
+      font-size: 16px;
+    }
+    &__city {
+      font-size: 14px;
+    }
+    &__desc {
+      font-size: 14px;
+    }
+    &__days {
+      font-size: 14px;
+    }
+    &__horus {
+      font-size: 14px;
+    }
+    &__address {
+      font-size: 14px;
     }
   }
 }

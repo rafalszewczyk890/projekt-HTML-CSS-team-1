@@ -691,8 +691,8 @@ a {
 }
 .contacts {
   background-color: #fff5f6;
-  padding-top: 120px;
-  padding-bottom: 165px;
+  padding-top: 86px;
+  padding-bottom: 113px;
 }
 .contacts__card {
   width: 100%;
@@ -784,6 +784,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 132px;
+    padding-bottom: 165px;
+  }
   .contacts__list {
     flex-wrap: nowrap;
     gap: 20px;
@@ -801,6 +805,24 @@ a {
     justify-content: center;
     margin: 0;
     gap: 15px;
+  }
+  .contacts__category {
+    font-size: 16px;
+  }
+  .contacts__city {
+    font-size: 14px;
+  }
+  .contacts__desc {
+    font-size: 14px;
+  }
+  .contacts__days {
+    font-size: 14px;
+  }
+  .contacts__horus {
+    font-size: 14px;
+  }
+  .contacts__address {
+    font-size: 14px;
   }
 }
 .header {
