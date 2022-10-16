@@ -327,16 +327,6 @@ footer {
   color: #000;
 }
 
-.review {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.review__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .review__text {
   font-family: "DM Sans";
   font-style: normal;

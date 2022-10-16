@@ -1,13 +1,14 @@
 .review{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     &__image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+     
     }
     &__text{
-        @include articleText-mobile
+        // @include articleText-mobile
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
     }
 }
