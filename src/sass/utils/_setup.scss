@@ -2,20 +2,61 @@ body {
   font-size: 14px;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 // majority font sizes
 
-$font-size-mobile: 14px;
+$font-size-main: 14px;
+
 $font-size-mobile-secondary: 12px;
+$font-size-mobile-numbers: 36px;
 
-$font-size-tablet: 14px;
 $font-size-tablet-secondary: 8px;
+$font-size-tablet-heading-secondary: 26px;
+$font-size-tablet-heading-main: 54px;
+$font-size-tablet-numbers: 48px;
 
-$font-size-desktop: 16px;
-$font-size-desktop: 14px;
+$font-size-desktop-heading-secondary: 30px;
+$font-size-desktop-heading-main: 58px;
+$font-size-desktop-numbers: 58px;
+$font-size-desktop-achievements: 16px;
 
-$font-size-footer:30px;
+$font-size-footer: 30px;
 
 // main colors
 
@@ -34,6 +75,7 @@ $background-color-header: #ffb8ca;
 $background-color-products: #e5e5e5;
 $background-color-how: #fff5f6;
 $background-color-button: #d41342;
+$background-color-contacts: #fff5f6;
 // products grid colors
 
 $background-color-icecream: #ffb8ca;

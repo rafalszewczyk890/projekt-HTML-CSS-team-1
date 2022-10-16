@@ -1,0 +1,91 @@
+.contacts {
+  background-color: $background-color-contacts;
+
+  &__card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 43px 20px 43px 20px;
+  }
+
+  &__category {
+    display: inline-block;
+    background-color: $background-color-icecoffee;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    &--foodtruck {
+      background-color: $background-color-milkshakes;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__city {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: black;
+    padding-bottom: 10px;
+  }
+
+  &__desc {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $font-color-subtitle;
+    padding-bottom: 25px;
+    border-bottom: #e1e1e1 solid 1px;
+    margin-bottom: 25px;
+  }
+
+  &__days {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+  }
+
+  &__hours {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: $font-header;
+    margin-bottom: 10px;
+    &--bottom {
+      padding-bottom: 25px;
+      border-bottom: #e1e1e1 solid 1px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__address {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $font-color-subtitle;
+  }
+}
