@@ -15,6 +15,10 @@
     background: $color-primary;
     color: $font-header-before;
     fill: $font-header-before;
+    &:hover,
+    &:focus {
+      background: $background-color-buttonHover;
+    }
   }
   &--color {
     background: $background-color-button;
