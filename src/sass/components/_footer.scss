@@ -3,10 +3,7 @@
   margin: 0 auto;
 }
 .footer__line{
-  border:$font-color-subtitle solid 1px;
-  position: absolute;
-  width: 100%;
-  height: 0px;
+  border:$footer-line solid 1px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 footer{
@@ -191,13 +188,15 @@ footer{
   }
   .footer{
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    gap:251px;
    
   &__container {
     flex-direction: row;
-    align-items: flex-start;
     text-align: left;
-    justify-content: space-around;
+    flex-direction: column;
+   margin: 0 114px;
     }
  &__tittle{
     font-family: Titan One;
@@ -209,8 +208,7 @@ footer{
     color:$font-header;
     text-transform:uppercase;
     padding-top: 15px;
-    left:0;
-    top:0;
+   
  }
  &__text{
     font-family: Titan One;
@@ -221,14 +219,15 @@ letter-spacing: 0.06em;
 text-align: left;
 color:$font-header-before;
 text-transform:uppercase;
+padding-top: 15px;
+   
  }
  &__icons{
     display:flex;
     gap:24px;
     padding-bottom: 51px;
-    justify-content: flex-end;
-    right: 0;
-    top:0;
+    
+   
   }
   &__icon{
     text-decoration: none;
@@ -249,9 +248,7 @@ text-transform:uppercase;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.02em;
-  text-align: left;
   color:$color-secondary;
-
 
   &-color{
   color:$font-header-before;
