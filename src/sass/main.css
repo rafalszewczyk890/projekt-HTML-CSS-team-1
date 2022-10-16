@@ -285,16 +285,16 @@ body {
     line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: #000;
+  }
+  .footer__contact-color {
+    color: #d41443;
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #000;
-  }
-  .footer__contact-color {
-    color: #d41443;
   }
   .footer__ending {
     font-family: DM Sans;
@@ -391,16 +391,16 @@ body {
     line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: #000;
+  }
+  .footer__contact-color {
+    color: #d41443;
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #000;
-  }
-  .footer__contact-color {
-    color: #d41443;
   }
   .footer__ending {
     font-family: DM Sans;
@@ -490,16 +490,16 @@ body {
     line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: #000;
+  }
+  .footer__contact-color {
+    color: #d41443;
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #000;
-  }
-  .footer__contact-color {
-    color: #d41443;
   }
   .footer__ending {
     font-family: DM Sans;

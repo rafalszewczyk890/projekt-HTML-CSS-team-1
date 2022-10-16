@@ -65,17 +65,16 @@ text-transform:uppercase;
   line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
-  
+  color:$color-secondary;
+
+  &-color{
+  color:$font-header-before;
   font-family: DM Sans;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.02em;
-  text-align: left;
-  color:$color-secondary;
-
-  &-color{
-  color:$font-header-before}
+  text-align: left;}
 }
 &__ending{
   font-family: DM Sans;
@@ -152,17 +151,16 @@ text-transform:uppercase;
   line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
-  
+  color:$color-secondary;
+
+  &-color{
+  color:$font-header-before;
   font-family: DM Sans;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.02em;
-  text-align: left;
-  color:$color-secondary;
-
-  &-color{
-  color:$font-header-before}
+  text-align: left;}
 }
 &__ending{
   font-family: DM Sans;
@@ -235,17 +233,16 @@ text-transform:uppercase;
   line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
-  
+  color:$color-secondary;
+
+  &-color{
+  color:$font-header-before;
   font-family: DM Sans;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.02em;
-  text-align: left;
-  color:$color-secondary;
-
-  &-color{
-  color:$font-header-before}
+  text-align: left;}
 }
 &__ending{
   font-family: DM Sans;
