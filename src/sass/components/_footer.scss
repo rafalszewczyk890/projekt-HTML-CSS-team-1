@@ -70,5 +70,18 @@ text-transform:uppercase;
   line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
-  color:$color-secondary
-}}}
+  color:$color-secondary;
+
+  &-color{
+  color:$font-header-before}
+}
+&__ending{
+  font-family: DM Sans;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.85;
+letter-spacing: 0.02em;
+text-align: left;
+color:$font-color-subtitle;
+}
+}}
