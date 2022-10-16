@@ -7,9 +7,6 @@
   position: absolute;
   width: 100%;
   height: 0px;
-  left: 0px;
-  top: 5135px;
-  
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 footer{
@@ -110,9 +107,7 @@ footer{
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 60px;
-        padding: 60px 0;
-    gap: 258px;
+        gap: 258px;
    
   &__container {
     flex-direction: column;
@@ -195,23 +190,14 @@ footer{
     width: 100%;
   }
   .footer{
-    
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    position: relative;
-    width: 1280px;
-    height: 247px;
-    left: 0px;
-    gap:258px;
-    
    
   &__container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: start;
     text-align: left;
-    
+    justify-content: space-around;
     }
  &__tittle{
     font-family: Titan One;
@@ -223,8 +209,8 @@ footer{
     color:$font-header;
     text-transform:uppercase;
     padding-top: 15px;
-    top:0;
     left:0;
+    top:0;
  }
  &__text{
     font-family: Titan One;
@@ -241,7 +227,6 @@ text-transform:uppercase;
     gap:24px;
     padding-bottom: 51px;
     justify-content: flex-end;
-    position: absolute;
     right: 0;
     top:0;
   }
@@ -278,7 +263,6 @@ text-transform:uppercase;
   text-align: left;}
 }
 &__ending{
-  position:relative;
   font-family: DM Sans;
 font-size: 14px;
 font-weight: 700;
@@ -287,6 +271,7 @@ letter-spacing: 0.02em;
 text-align: left;
 color:$font-color-subtitle;
 text-align: center;
+justify-content: center;
 padding: 9px 0 10px 0 ;
 }
 }}

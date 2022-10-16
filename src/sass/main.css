@@ -511,8 +511,6 @@ a {
   position: absolute;
   width: 100%;
   height: 0px;
-  left: 0px;
-  top: 5135px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -641,8 +639,6 @@ a {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 60px;
-    padding: 60px 0;
     gap: 258px;
   }
   .footer__container {
@@ -745,11 +741,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    position: relative;
-    width: 1280px;
-    height: 247px;
-    left: 0px;
-    gap: 258px;
   }
   .footer__container {
     -webkit-box-orient: vertical;
@@ -774,8 +765,6 @@ a {
     color: #ffa5ba;
     text-transform: uppercase;
     padding-top: 15px;
-    top: 0;
-    left: 0;
   }
   .footer__text {
     font-family: Titan One;
@@ -796,7 +785,6 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    position: absolute;
     right: 0;
     top: 0;
   }
@@ -833,7 +821,6 @@ a {
     text-align: left;
   }
   .footer__ending {
-    position: relative;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 700;
@@ -842,6 +829,9 @@ a {
     text-align: left;
     color: #907e82;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 9px 0 10px 0;
   }
 }
