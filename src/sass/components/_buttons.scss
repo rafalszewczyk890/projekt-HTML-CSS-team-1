@@ -24,4 +24,13 @@
     background: $background-color-button;
     color: $color-primary;
   }
+  &__contacts {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button__contacts {
+    font-size: 16px;
+  }
 }
