@@ -1,7 +1,17 @@
 .review{
-    background-color: aqua;
+    display: block;
     &__image{
+        display:flex;
+        justify-content:center;
         width:85px;
-        height: 85px;
+        height:85px;
     }
+    &__text{
+        @include articleText-mobile;
+        text-decoration:underline;
+    }
+    &__background{
+        background-color:#FAFAFA;
+        padding:50px;
+    }  
 }
