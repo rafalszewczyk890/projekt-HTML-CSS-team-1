@@ -1,0 +1,41 @@
+.review{
+    display: block;
+    margin: 0 20px;
+    
+    &__image{
+        margin:0 auto;
+        display:block;
+        margin-top: 80px;
+        width:85px;
+        height:85px;
+    }
+    &__text{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.55;
+        text-decoration: 1px solid $underline;
+        text-decoration-line:underline;
+        text-underline-offset:10px;
+        text-align: center;
+    }
+    &__background{
+        background-color:#FAFAFA;
+        padding:50px;
+        margin-top: 29px;
+        margin-bottom: 29px;
+    }
+    &__dots{
+        display: flex;
+        justify-content: center;
+        max-height: 30px;
+    }
+    &__data{
+        @include review-data;
+        margin-bottom: 30px;
+    }
+    &__home{
+        text-align: center;
+    }
+}

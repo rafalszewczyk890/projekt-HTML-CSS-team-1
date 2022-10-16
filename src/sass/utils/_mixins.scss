@@ -35,6 +35,14 @@
   font-size: 12px;
   line-height: 1.62;
 }
+@mixin review-data{
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
 // Rozmiary fontów dla tablets
 @mixin secondaryHeading-tablet {
