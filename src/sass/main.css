@@ -317,6 +317,9 @@ a {
   color: #d41443;
   fill: #d41443;
 }
+.button--bright:hover, .button--bright:focus {
+  background: #ecebeb;
+}
 .button--color {
   background: #d41342;
   color: #fff;
