@@ -1,14 +1,7 @@
 .review{
-    
+    background-color: aqua;
     &__image{
-     
-    }
-    &__text{
-        // @include articleText-mobile
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.62;
+        width:85px;
+        height: 85px;
     }
 }
