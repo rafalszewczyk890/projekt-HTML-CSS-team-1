@@ -41,14 +41,20 @@ a {
 
 // majority font sizes
 
-$font-size-mobile: 14px;
+$font-size-main: 14px;
+
 $font-size-mobile-secondary: 12px;
+$font-size-mobile-numbers: 36px;
 
-$font-size-tablet: 14px;
 $font-size-tablet-secondary: 8px;
+$font-size-tablet-heading-secondary: 26px;
+$font-size-tablet-heading-main: 54px;
+$font-size-tablet-numbers: 48px;
 
-$font-size-desktop: 16px;
-$font-size-desktop: 14px;
+$font-size-desktop-heading-secondary: 30px;
+$font-size-desktop-heading-main: 58px;
+$font-size-desktop-numbers: 58px;
+$font-size-desktop-achievements: 16px;
 
 $font-size-footer: 30px;
 
@@ -69,6 +75,7 @@ $background-color-header: #ffb8ca;
 $background-color-products: #e5e5e5;
 $background-color-how: #fff5f6;
 $background-color-button: #d41342;
+$background-color-contacts: #fff5f6;
 // products grid colors
 
 $background-color-icecream: #ffb8ca;

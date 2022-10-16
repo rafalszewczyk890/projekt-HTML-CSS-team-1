@@ -1,7 +1,9 @@
 // Nagłówki
 .about {
   background-color: $background-color-how;
+  padding-bottom: 145px;
 }
+
 .heading {
   @include flexCenter(column);
   margin: 0 auto 26px;
@@ -26,8 +28,11 @@
   &__image {
     min-width: 280px;
     width: 100%;
-    margin: 0 20px;
+    // margin: 0 20px;
     @include flexCenter;
+    &-item {
+      height: 100%;
+    }
   }
   &__text {
     padding: 0 50px;
@@ -40,17 +45,155 @@
     &--secondary {
       margin-bottom: 47px;
       color: $font-color-subtitle;
+      @media screen and (max-width: 768px) {
+        z-index: 2;
+        position: relative;
+        // background-image: url(./images/about-milk1x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        // background-image: url(./images/about-milk2x.png);
+      }
     }
   }
+}
+.button__vector {
+  margin-left: 13.62px;
 }
 .flex-center {
   @include flexCenter;
 }
 .about-achievements {
   @include flexCenter;
-
+  margin-top: 39px;
+  &__items {
+    max-width: 230px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
   &__list {
     @include flexCenter(column);
   }
-  &__icon {width:fit-content}
+  &__icon {
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+  &__numbers {
+    @include mainHeading;
+    text-align: left;
+    font-size: $font-size-mobile-numbers;
+    line-height: 0.878;
+    height: 56px;
+  }
+  &__description {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: $font-size-mobile-secondary;
+    line-height: 1.7;
+    color: $color-secondary;
+  }
+}
+
+// ustawienia na tablet
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-bottom: 140px;
+  }
+  .heading {
+    margin-bottom: 50px;
+    padding-top: 130px;
+    &__secondary {
+      @include secondaryHeading-tablet;
+    }
+    &__main {
+      @include mainHeading-tablet;
+    }
+  }
+  .about-description {
+    @include flexCenter(row);
+    margin: 0 auto;
+
+    &__image {
+      align-self: flex-start;
+      width: 340px;
+      height: 339px;
+    }
+    &__text {
+      padding-left: 17px;
+      padding-right: 0px;
+      width: 340px;
+      @include articleText-tablet;
+      &--main {
+        margin-bottom: 49px;
+      }
+      &--secondary {
+        margin-bottom: 62px;
+      }
+    }
+  }
+  .about-achievements {
+    &__list {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 60px;
+    }
+    &__items {
+      width: 180px;
+    }
+    &__icon {
+      margin-bottom: 36px;
+    }
+    &__numbers {
+      @include numbersAchievements-tablet;
+    }
+    &__description {
+      margin-top: 13px;
+      @include descriptionAchievements-tablet;
+    }
+  }
+}
+
+// Wersja na desktop
+@media screen and (min-width: 1200px) {
+  .heading {
+    &__secondary {
+      @include secondaryHeading-desktop;
+    }
+    &__main {
+      @include mainHeading-desktop;
+    }
+  }
+  .about-description {
+    // background-image: url(./images/about-milk1x.png);
+    z-index: 2;
+    position: relative;
+    &__image {
+      width: 516px;
+      height: 516px;
+    }
+    &__text {
+      margin-left: 74px;
+      width: 463px;
+    }
+  }
+  .flex-center {
+    justify-content: flex-start;
+  }
+  .about-achievements {
+    gap: 30px;
+    &__items {
+      width: 330px;
+    }
+    &__numbers {
+      font-size: $font-size-desktop-numbers;
+    }
+  }
 }
