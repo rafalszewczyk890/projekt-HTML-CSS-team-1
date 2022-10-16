@@ -205,6 +205,9 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__line {
+    border-bottom: #907e82 solid 5px;
+  }
   footer {
     background-color: #fff5f6;
     width: 100%;
@@ -307,6 +310,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__line {
+    border-bottom: #907e82 solid 5px;
+  }
   footer {
     background-color: #fff5f6;
     width: 100%;
@@ -413,6 +419,9 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .footer__line {
+    border-bottom: rgb(225, 225, 225) solid 1px;
+  }
   footer {
     background-color: #fff5f6;
     width: 100%;

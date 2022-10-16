@@ -4,6 +4,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__line{
+    border-bottom:$font-color-subtitle solid 5px;
+  }
 footer{
     background-color:$background-color-how;
     width: 100%;
@@ -87,6 +90,9 @@ color:$font-color-subtitle;
 }
 }}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__line{
+    border-bottom:$font-color-subtitle solid 5px;
+  }
 footer{
     background-color:$background-color-how;
     width: 100%;
@@ -173,6 +179,9 @@ color:$font-color-subtitle;
 }
 }}
 @media (min-width: 1200px) {
+  .footer__line{
+    border-bottom:$footer-line solid 1px;
+  }
 footer{
     background-color:$background-color-how;
     width: 100%;
