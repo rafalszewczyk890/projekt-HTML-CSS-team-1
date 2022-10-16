@@ -29,5 +29,13 @@
     &__dots{
         display: flex;
         justify-content: center;
+        max-height: 30px;
+    }
+    &__data{
+        @include review-data;
+        margin-bottom: 30px;
+    }
+    &__home{
+        text-align: center;
     }
 }
