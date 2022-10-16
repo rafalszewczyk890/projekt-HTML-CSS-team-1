@@ -327,6 +327,11 @@ a {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .button__contacts {
+    font-size: 16px;
+  }
+}
 .products__title {
   text-align: center;
 }
@@ -423,11 +428,6 @@ a {
   height: 100%;
   max-width: 1280px;
   max-height: 430px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .footer__line {
@@ -839,6 +839,33 @@ a {
   }
   .contacts__address {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__card {
+    width: 330px;
+    padding: 51px 43px 62px 43px;
+  }
+  .contacts__category {
+    letter-spacing: 0.04em;
+  }
+  .contacts__city {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .contacts__desc {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .contacts__days {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .contacts__hours {
+    font-size: 16px;
+  }
+  .contacts__address {
+    font-size: 16px;
   }
 }
 .header {

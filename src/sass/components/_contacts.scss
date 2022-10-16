@@ -144,3 +144,33 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    &__card {
+      width: 330px;
+      padding: 51px 43px 62px 43px;
+    }
+    &__category {
+      letter-spacing: 0.04em;
+    }
+    &__city {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+    &__desc {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+    &__days {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+    &__hours {
+      font-size: 16px;
+    }
+    &__address {
+      font-size: 16px;
+    }
+  }
+}
