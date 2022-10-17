@@ -73,7 +73,7 @@ a {
   padding-top: 125px;
 }
 .heading__secondary {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -88,7 +88,7 @@ a {
   }
 }
 .heading__main {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -120,7 +120,7 @@ a {
 }
 .about-description__text {
   padding: 0 50px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -139,11 +139,11 @@ a {
 }
 @media screen and (max-width: 768px) {
   .about-description__text--secondary:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100vw;
     height: 30vw;
-    background-image: url('../images/about-milk1x.png');
+    background-image: url("../images/about-milk1x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,12 +152,9 @@ a {
     z-index: 1;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (max-width: 768px) and (min-resolution: 192dpi),
-  screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .about-description__text--secondary:before {
-    background-image: url('../images/about-milk2x.png');
+    background-image: url("../images/about-milk2x.png");
   }
 }
 
@@ -200,7 +197,7 @@ a {
   margin-bottom: 16px;
 }
 .about-achievements__numbers {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -213,7 +210,7 @@ a {
   height: 56px;
 }
 .about-achievements__description {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
@@ -293,11 +290,11 @@ a {
     line-height: 0.878;
   }
   .about-description:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 1282px;
     height: 534px;
-    background-image: url('../images/about-milk2x.png');
+    background-image: url("../images/about-milk2x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -335,7 +332,7 @@ a {
   width: 176px;
   height: 44px;
   cursor: pointer;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
   line-height: 0.78;
@@ -347,12 +344,9 @@ a {
 .button--bright {
   background: #fff;
   color: #d41443;
+  fill: #d41443;
 }
-.button--bright:hover,
-.button--bright:target {
-  background: #ecebeb;
-}
-.button--bright:hover, .button--bright:focus {
+.button--bright:hover, .button--bright:target {
   background: #ecebeb;
 }
 .button--color {
@@ -372,7 +366,7 @@ a {
   text-align: center;
 }
 .products__secondheader {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -380,7 +374,7 @@ a {
   color: #ffa5ba;
 }
 .products__header {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -424,7 +418,7 @@ a {
     display: flex;
   }
   .products__name {
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -435,14 +429,14 @@ a {
     margin-top: 161px;
   }
   .products__name::after {
-    content: '. . .';
+    content: ". . .";
     font-weight: 700;
     font-size: 20px;
     display: block;
     margin: 30px 0px;
   }
   .products__decription {
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -766,7 +760,7 @@ a {
   margin-bottom: 25px;
   border-radius: 5px;
   color: white;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -780,7 +774,7 @@ a {
   flex-wrap: wrap;
 }
 .contacts__city {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -790,7 +784,7 @@ a {
   padding-bottom: 10px;
 }
 .contacts__desc {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -801,14 +795,14 @@ a {
   margin-bottom: 25px;
 }
 .contacts__days {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
 }
 .contacts__hours {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -822,7 +816,7 @@ a {
   margin-bottom: 25px;
 }
 .contacts__address {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -964,7 +958,7 @@ a {
   top: 0;
 }
 .block__header-lower {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -975,7 +969,7 @@ a {
   color: #fff;
 }
 .block__header-higher {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -989,10 +983,9 @@ a {
   gap: 8px;
   z-index: 3;
 }
-.block__button-first,
-.block__button-second {
+.block__button-first, .block__button-second {
   height: 24px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 8px;
   padding: 12px;
   display: flex;
@@ -1051,8 +1044,7 @@ a {
   background-color: #ffb8ca;
   margin: auto;
   padding: 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 .modal__container {
@@ -1067,7 +1059,7 @@ a {
   width: 160px;
   height: 44px;
   background-color: #fff;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1081,7 +1073,7 @@ a {
   background-color: #ecebeb;
 }
 .modal__header {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 22px;
   color: #fff;
@@ -1091,7 +1083,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 13px;
   color: #fff;
@@ -1102,7 +1094,7 @@ a {
   height: 30px;
   border-radius: 10px;
   padding-left: 10px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 13px;
   color: #d41443;
@@ -1114,7 +1106,7 @@ a {
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 10px;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 13px;
   color: #d41443;
@@ -1128,7 +1120,7 @@ a {
   padding-top: 10px;
 }
 .modal__acceptance-label {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 13px;
   color: #fff;
@@ -1145,7 +1137,7 @@ a {
   width: 160px;
   height: 44px;
   background-color: #c2e297;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1173,7 +1165,7 @@ a {
     width: 160px;
     height: 44px;
     background-color: #fff;
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -1231,7 +1223,7 @@ a {
     margin-left: 120px;
   }
   .header__paragraph {
-    font-style: 'DM Sans';
+    font-style: "DM Sans";
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
@@ -1248,7 +1240,7 @@ a {
     text-align: right;
   }
   .box__amount {
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-weight: 400;
     font-size: 28px;
     line-height: 1;
@@ -1256,7 +1248,7 @@ a {
     z-index: 4;
   }
   .box__description {
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-weight: 400;
     font-size: 8px;
     line-height: 1;
@@ -1324,7 +1316,7 @@ a {
     z-index: 2;
   }
   .menu__item {
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-weight: 700;
     font-size: 16px;
     color: #fff;
@@ -1375,8 +1367,7 @@ a {
   .block__header-higher {
     font-size: 58px;
   }
-  .block__button-first,
-  .block__button-second {
+  .block__button-first, .block__button-second {
     height: 40px;
     font-size: 14px;
   }
@@ -1385,3 +1376,51 @@ a {
     width: 26px;
     height: 26px;
   }
+}
+.review {
+  display: block;
+  margin: 0 20px;
+}
+.review__image {
+  margin: 0 auto;
+  display: block;
+  margin-top: 80px;
+  width: 85px;
+  height: 85px;
+}
+.review__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  -webkit-text-decoration: 1px solid #e1e1e1;
+          text-decoration: 1px solid #e1e1e1;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-underline-offset: 10px;
+  text-align: center;
+}
+.review__background {
+  background-color: #FAFAFA;
+  padding: 50px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+.review__dots {
+  display: flex;
+  justify-content: center;
+  max-height: 30px;
+}
+.review__data {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.review__home {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
