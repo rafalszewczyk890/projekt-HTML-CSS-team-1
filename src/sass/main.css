@@ -512,8 +512,6 @@ a {
 .footer__line {
   border: rgb(225, 225, 225) solid 1px;
   width: 100%;
-  position: absolute;
-  bottom: 50px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -842,7 +840,6 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
-    position: relative;
   }
 }
 .contacts {
@@ -932,12 +929,109 @@ a {
   line-height: 18px;
   color: #907e82;
 }
+<<<<<<< Updated upstream
 
+=======
+.contacts__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 132px;
+    padding-bottom: 165px;
+  }
+  .contacts__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 81px;
+  }
+  .contacts__card {
+    margin-bottom: 0;
+  }
+  .contacts__card:last-child {
+    margin-bottom: 0;
+  }
+  .contacts__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    gap: 15px;
+  }
+  .contacts__category {
+    font-size: 16px;
+  }
+  .contacts__city {
+    font-size: 14px;
+  }
+  .contacts__desc {
+    font-size: 14px;
+  }
+  .contacts__days {
+    font-size: 14px;
+  }
+  .contacts__horus {
+    font-size: 14px;
+  }
+  .contacts__address {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__card {
+    width: 330px;
+    padding: 51px 43px 62px 43px;
+  }
+  .contacts__category {
+    letter-spacing: 0.04em;
+  }
+  .contacts__city {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .contacts__desc {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .contacts__days {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .contacts__hours {
+    font-size: 16px;
+  }
+  .contacts__address {
+    font-size: 16px;
+  }
+}
+>>>>>>> Stashed changes
 .header {
   background-color: #ffb8ca;
+  margin: 0 auto;
   padding: 6px 20px 0 20px;
   height: 502px;
   min-width: 320px;
+}
+.header__icon {
+  display: none;
 }
 .header__container {
   display: none;
@@ -963,6 +1057,15 @@ a {
 
 .menu {
   min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menu__logo {
   width: 199px;
@@ -976,6 +1079,32 @@ a {
 }
 .menu__button:hover {
   background-color: #ecebeb;
+  cursor: pointer;
+}
+.menu__box {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__icon {
+  position: relative;
+  z-index: 3;
+  stroke: #d41443;
+  fill: none;
+}
+.menu__mobile {
+  background-color: transparent;
+  border-color: transparent;
+}
+.menu__mobile:hover {
   cursor: pointer;
 }
 
@@ -1040,6 +1169,7 @@ a {
 .block__button-first {
   background-color: #d41443;
   color: #fff;
+  width: 62px;
 }
 .block__button-first:hover {
   background-color: #c7133e;
@@ -1048,6 +1178,7 @@ a {
 .block__button-second {
   background-color: #fff;
   color: #d41443;
+  width: 86px;
 }
 .block__button-second:hover {
   background-color: #ecebeb;
@@ -1205,7 +1336,7 @@ a {
 .modal__submit {
   width: 160px;
   height: 44px;
-  background-color: #c2e297;
+  background-color: #d41443;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 16px;
@@ -1224,17 +1355,144 @@ a {
   pointer-events: none;
 }
 
+.menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e17992;
+  z-index: 10;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-icon {
+  stroke: #fff;
+  fill: none;
+}
+
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 19px;
+}
+.mobile__button {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  width: 209px;
+  height: 44px;
+  background-color: #fff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #d41443;
+}
+.mobile__button:hover {
+  background-color: #ecebeb;
+  cursor: pointer;
+}
+.mobile__arrow {
+  stroke: #d41443;
+  fill: none;
+  position: relative;
+  top: 2px;
+}
+.mobile__menu {
+  width: 100%;
+}
+.mobile__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.mobile__item {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #fff;
+  border: solid 1px #E18298;
+  padding: 13px 0 11px 21px;
+  height: 42px;
+}
+.mobile__item:first-child {
+  color: #d41443;
+}
+
 @media screen and (min-width: 768px) {
   .menu {
+<<<<<<< Updated upstream
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+>>>>>>> Stashed changes
   }
   .menu__button {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 37px 0 37px;
     width: 160px;
     height: 44px;
     background-color: #fff;
@@ -1244,8 +1502,13 @@ a {
     line-height: 21px;
     color: #d41443;
   }
+  .menu__arrow {
+    position: relative;
+    top: 2px;
+    fill: #d41443;
+  }
   .block {
-    margin: 15px 0 44px 0;
+    margin: 15px 0 30px 0;
     max-width: 162px;
   }
   .block__header-lower {
@@ -1304,6 +1567,14 @@ a {
     letter-spacing: 0.06em;
     text-align: left;
   }
+  .header__icon {
+    display: block;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: 154px;
+    top: 345px;
+  }
   .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1351,7 +1622,7 @@ a {
     width: 18px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header {
     padding: 37px 115px 0 46px;
     height: 665px;
@@ -1382,6 +1653,20 @@ a {
   .header__paragraph {
     font-size: 14px;
     line-height: 1.4;
+  }
+  .header__icon {
+    height: 26px;
+    width: 26px;
+    top: 583px;
+    left: 295px;
+  }
+  .menu {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__mobile {
+    display: none;
   }
   .menu__navigation {
     display: -webkit-box;
@@ -1440,7 +1725,7 @@ a {
     right: -60px;
   }
   .block {
-    margin: 84px 0 112px 69px;
+    margin: 84px 0 100px 69px;
     max-width: 277px;
     gap: 25px;
   }
@@ -1457,9 +1742,106 @@ a {
     height: 40px;
     font-size: 14px;
   }
+  .block__button-first {
+    width: 104px;
+  }
+  .block__button-second {
+    width: 138px;
+  }
   .icon--circle {
     margin-left: 249px;
     width: 26px;
     height: 26px;
   }
+<<<<<<< Updated upstream
+=======
+}
+.review {
+  display: block;
+  margin: 0 20px;
+}
+.review__image {
+  margin: 0 auto;
+  display: block;
+  margin-top: 80px;
+  width: 85px;
+  height: 85px;
+}
+.review__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.review__text::before {
+  background-image: url("../images/svg/symbol-defs.svg#icon-quote-mark");
+  width: 54px;
+  height: 40px;
+  position: relative;
+}
+.review__text::after {
+  background-image: repeating-linear-gradient(to bottom, red 30px, blue 1px);
+  width: 100%;
+}
+.review__background {
+  background-color: #FAFAFA;
+  padding: 50px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+.review__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 30px;
+}
+.review__data {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.86;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.review__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 86px;
+}
+.review__svg {
+  max-width: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .review__text {
+    font-size: 14px;
+  }
+  .review__data {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .review__text {
+    font-size: 16px;
+  }
+  .review__data {
+    font-size: 16px;
+  }
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=main.css.map */

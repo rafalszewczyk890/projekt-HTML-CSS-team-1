@@ -6,7 +6,7 @@
   border:$footer-line solid 1px;
   width: 100%; 
   position: absolute;
-  bottom:50px;
+  
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 footer{
@@ -83,7 +83,8 @@ text-transform:uppercase;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.02em;
-  text-align: left;}
+  text-align: left;
+}
 }
 &__ending{
   font-family: DM Sans;
@@ -278,7 +279,6 @@ color:$font-color-subtitle;
 text-align: center;
 justify-content: center;
 padding: 9px 0 10px 0 ;
-position: absolute;
 bottom:0;
 left:0;
 width:100%;
