@@ -41,7 +41,6 @@
     }
     &__icons {
       display: flex;
-      justify-content: space-around;
       justify-content: flex-end;
       padding: 0 20px 46px 0;
       gap: 28px;
@@ -92,19 +91,13 @@
     }
   }
 }
-
-
-
-
-.footer__line {
-  border: $footer-line solid 1px;
-}
 @media (min-width: 768px) {
   footer {
     background-color: $background-color-how;
     width: 100%;
   }
   .footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 92px;
@@ -140,9 +133,12 @@
       margin: 0;
     }
     &__icons {
+      position: absolute;
       display: flex;
       padding: 0 36px 46px 0;
       gap: 30px;
+      right: 0;
+      top:0;
     }
     &__icon {
       text-decoration: none;
@@ -188,5 +184,13 @@
       color: $font-color-subtitle;
       margin: 22px 91px 25px 79px;
     }
+    // // &__iconss {
+    // //   display: inline-flex;
+    // //   position: absolute;
+    // //   margin-top: 0;
+    // //   // width: 320px;
+    // }
   }
 }
+
+

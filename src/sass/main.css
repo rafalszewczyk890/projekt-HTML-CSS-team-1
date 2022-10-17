@@ -811,8 +811,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -868,16 +866,13 @@ a {
     margin: 22px 91px 25px 79px;
   }
 }
-.footer__line {
-  border: rgb(225, 225, 225) solid 1px;
-}
-
 @media (min-width: 768px) {
   footer {
     background-color: #fff5f6;
     width: 100%;
   }
   .footer {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -926,11 +921,14 @@ a {
     margin: 0;
   }
   .footer__icons {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 36px 46px 0;
     gap: 30px;
+    right: 0;
+    top: 0;
   }
   .footer__icon {
     text-decoration: none;
