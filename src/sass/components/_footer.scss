@@ -1,17 +1,17 @@
 .footer__line {
   border: $footer-line solid 1px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
   footer {
     background-color: $background-color-how;
+    width: 100%;
   }
   .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
     flex-direction: column;
-    gap: 258px;
-    position: relative;
+    gap: 43px;
+    
 
     &__container {
       text-align: left;
@@ -29,7 +29,6 @@
       text-align: left;
       color: $font-header;
       text-transform: uppercase;
-      padding-bottom: 97px;
     }
     &__text {
       font-family: Titan One;
@@ -80,201 +79,14 @@
       }
     }
     &__ending {
+      flex-wrap: wrap;
       font-family: DM Sans;
       font-size: 14px;
       font-weight: 700;
       line-height: 1.85;
       letter-spacing: 0.02em;
-      text-align: left;
+      text-align:center;
       color: $font-color-subtitle;
+      margin:22px 91px 25px 79px;
     }
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  footer {
-    background-color: $background-color-how;
-    width: 100%;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 258px;
-
-    &__container {
-       flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-    }
-    &__tittle {
-      font-family: Titan One;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 1.133;
-      letter-spacing: 0.04em;
-      text-align: left;
-      color: $font-header;
-      text-transform: uppercase;
-    }
-    &__text {
-      font-family: Titan One;
-      font-size: 58px;
-      font-weight: 400;
-      line-height: 1.137;
-      letter-spacing: 0.06em;
-      text-align: left;
-      color: $font-header-before;
-      text-transform: uppercase;
-    }
-    &__icons {
-      display: flex;
-      gap: 24px;
-    }
-    &__icon {
-      text-decoration: none;
-      width: 34px;
-      height: 34px;
-      background-color: $font-header;
-      border-radius: 50%;
-      fill: $color-primary;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__icon:hover,
-    __icon :focus {
-      color: blueviolet;
-    }
-    &__contact {
-      font-family: DM Sans;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0.02em;
-      text-align: left;
-      color: $color-secondary;
-
-      &-color {
-        color: $font-header-before;
-        font-family: DM Sans;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-        text-align: left;
-      }
-    }
-    &__ending {
-      font-family: DM Sans;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.85;
-      letter-spacing: 0.02em;
-      text-align: left;
-      color: $font-color-subtitle;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer__line {
-    border-bottom: $footer-line solid 1px;
-  }
-  footer {
-    background-color: $background-color-how;
-    width: 100%;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    height: 247px;
-    gap: 258px;
-    position: relative;
-
-    &__container {
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: start;
-    }
-    &__tittle {
-      font-family: Titan One;
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 1.133;
-      letter-spacing: 0.04em;
-      text-align: left;
-      color: $font-header;
-      text-transform: uppercase;
-      margin:0 0 0 114px;
-    }
-
-    &__text {
-      font-family: Titan One;
-      font-size: 58px;
-      font-weight: 400;
-      line-height: 1.137;
-      letter-spacing: 0.06em;
-      text-align: left;
-      color: $font-header-before;
-      text-transform: uppercase;
-      padding-top: 15px;
-      margin:0 0 0 114px;
-    }
-    &__icons {
-      display: flex;
-      gap: 24px;
-      padding-bottom: 51px;
-      justify-content: flex-end;
-      
-    }
-    &__icon {
-      text-decoration: none;
-      width: 34px;
-      height: 34px;
-      background-color: $font-header;
-      border-radius: 50%;
-      fill: $color-primary;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__icon:hover,
-    __icon :focus {
-      color: blueviolet;
-    }
-    &__contact {
-      font-family: DM Sans;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0.02em;
-      color: $color-secondary;
-
-      &-color {
-        color: $font-header-before;
-        font-family: DM Sans;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-        text-align: left;
-      }
-    }
-    &__ending {
-      font-family: DM Sans;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.85;
-      letter-spacing: 0.02em;
-      color: $font-color-subtitle;
-      text-align: center;
-      justify-content: center;
-      padding: 9px 0 10px 0;
-      position: absolute;
-      bottom: 0;
-      left:0;
-
-  }
-}
-}
