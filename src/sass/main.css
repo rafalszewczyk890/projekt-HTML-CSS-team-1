@@ -362,6 +362,13 @@ a {
     font-size: 16px;
   }
 }
+.products__button {
+  background-color: #ffffff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 .products__title {
   text-align: center;
 }
@@ -381,6 +388,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #d41443;
+  margin-top: 15px;
 }
 .products__item {
   position: relative;
@@ -426,7 +434,7 @@ a {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 161px;
+    margin-top: 155px;
   }
   .products__name::after {
     content: ". . .";
@@ -447,6 +455,200 @@ a {
     margin-left: 41px;
     margin-right: 39px;
   }
+  .products__button {
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .products__item--icecream::before {
+    content: url(../images/products-icecram-mobile.png);
+    display: block;
+    position: absolute;
+    top: -112px;
+    left: 15px;
+    right: 15px;
+  }
+  .products__item--icecoffe::before {
+    content: url(../images/products-icecoffe-mobile.png);
+    display: block;
+    position: absolute;
+    top: -112px;
+    left: 15px;
+    right: 15px;
+  }
+  .products__item--milkshakes::before {
+    content: url(../images/products-milkshake-mobile.png);
+    display: block;
+    position: absolute;
+    top: -112px;
+    left: 15px;
+    right: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item {
+    width: 220px;
+  }
+  .products__title {
+    margin-top: 122px;
+  }
+  .products__secondheader {
+    font-size: 26px;
+    line-height: 0.866;
+  }
+  .products__header {
+    font-size: 54px;
+    line-height: 1.145;
+    margin-bottom: 150px;
+  }
+  .products__list {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .products__name {
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 155px;
+  }
+  .products__name::after {
+    content: ". . .";
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    margin: 30px 0px;
+  }
+  .products__decription {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin: 0px 11px;
+    width: 198px;
+    height: 124px;
+    overflow: hidden;
+  }
+  .products__button {
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .products__item--icecream::before {
+    content: url(../images/products-icecram-tablet.png);
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 5px;
+    right: 5px;
+  }
+  .products__item--icecoffe::before {
+    content: url(../images/products-icecoffe-tablet.png);
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 5px;
+    right: 5px;
+  }
+  .products__item--milkshakes::before {
+    content: url(../images/products-milkshake-tablet.png);
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 5px;
+    right: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item {
+    width: 330px;
+    height: 525px;
+  }
+  .products__title {
+    margin-top: 127px;
+  }
+  .products__secondheader {
+    font-size: 30px;
+    line-height: 0.882;
+  }
+  .products__header {
+    font-size: 58px;
+    line-height: 0.878;
+    margin-bottom: 259px;
+  }
+  .products__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  .products__name {
+    font-family: "Titan One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 163px;
+  }
+  .products__name::after {
+    content: ". . .";
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    margin: 30px 0px;
+  }
+  .products__decription {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin: 0px 44px;
+    width: 241px;
+    height: 106px;
+    overflow: hidden;
+  }
+  .products__button {
+    margin-top: 62px;
+    cursor: pointer;
+  }
+  .products__item--icecream::before {
+    content: url(../images/products-icecram-desktop.png);
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 3px;
+    right: 3px;
+  }
+  .products__item--icecoffe::before {
+    content: url(../images/products-icecoffe-desktop.png);
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 3px;
+    right: 3px;
+  }
+  .products__item--milkshakes::before {
+    content: url(../images/products-milkshake-desktop.png);
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 3px;
+    right: 3px;
+  }
 }
 .gallery {
   display: flex;
@@ -463,6 +665,8 @@ a {
 .footer__line {
   border: rgb(225, 225, 225) solid 1px;
   width: 100%;
+  position: absolute;
+  bottom: 50px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -477,6 +681,15 @@ a {
     flex-direction: column;
     gap: 258px;
     position: relative;
+  }
+  .footer-color {
+    color: #d41443;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
   .footer__container {
     flex-direction: column;
@@ -730,6 +943,7 @@ a {
     bottom: 0;
     left: 0;
     width: 100%;
+    position: relative;
   }
 }
 .contacts {
@@ -820,49 +1034,21 @@ a {
   line-height: 18px;
   color: #907e82;
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-
-=======
-.contacts__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-=======
 .contacts__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
->>>>>>> main
 @media screen and (min-width: 768px) {
   .contacts {
     padding-top: 132px;
     padding-bottom: 165px;
   }
   .contacts__list {
-<<<<<<< HEAD
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    gap: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-=======
     flex-wrap: nowrap;
     gap: 20px;
     align-items: center;
->>>>>>> main
     margin-bottom: 81px;
   }
   .contacts__card {
@@ -872,18 +1058,8 @@ a {
     margin-bottom: 0;
   }
   .contacts__buttons {
-<<<<<<< HEAD
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-=======
     flex-direction: row;
     justify-content: center;
->>>>>>> main
     margin: 0;
     gap: 15px;
   }
@@ -933,16 +1109,15 @@ a {
     font-size: 16px;
   }
 }
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> main
 .header {
   background-color: #ffb8ca;
-  margin: 0 auto;
   padding: 6px 20px 0 20px;
-  height: 502px;
-  min-width: 320px;
+}
+.header__wrap {
+  position: relative;
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 280px;
 }
 .header__icon {
   display: none;
@@ -953,8 +1128,8 @@ a {
 .header__primary--image {
   position: absolute;
   z-index: 2;
-  top: 92px;
-  right: 32px;
+  top: 86px;
+  left: 111px;
   height: 410px;
   width: 171px;
 }
@@ -970,16 +1145,10 @@ a {
 }
 
 .menu {
-  min-width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
 }
 .menu__logo {
   width: 199px;
@@ -997,16 +1166,10 @@ a {
 }
 .menu__box {
   height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .menu__icon {
   position: relative;
@@ -1034,6 +1197,7 @@ a {
   margin: 0;
   z-index: 3;
   top: 0;
+  line-height: 1;
 }
 .block__header-lower {
   font-family: "Titan One";
@@ -1094,8 +1258,8 @@ a {
   background-color: #ffa5ba;
   position: absolute;
   border-radius: 50%;
-  top: 83px;
-  right: -62px;
+  top: 77px;
+  left: 16px;
 }
 
 .icon--circle {
@@ -1236,15 +1400,9 @@ a {
 }
 
 .menu-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -1265,17 +1423,12 @@ a {
   height: 100vh;
   background-color: #e17992;
   z-index: 10;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
+  transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .mobile-icon {
@@ -1284,22 +1437,13 @@ a {
 }
 
 .mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 19px;
 }
 .mobile__button {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
   width: 209px;
@@ -1325,16 +1469,9 @@ a {
   width: 100%;
 }
 .mobile__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  flex-direction: column;
+  justify-content: left;
 }
 .mobile__item {
   font-family: "DM Sans";
@@ -1342,7 +1479,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   color: #fff;
-  border: solid 1px #E18298;
+  border: solid 1px #e18298;
   padding: 13px 0 11px 21px;
   height: 42px;
 }
@@ -1352,31 +1489,11 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
->>>>>>> Stashed changes
-=======
-    display: flex;
-    justify-content: space-between;
->>>>>>> main
+    align-items: flex-start;
   }
   .menu__button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     padding: 0 37px 0 37px;
     width: 160px;
     height: 44px;
@@ -1393,7 +1510,7 @@ a {
     fill: #d41443;
   }
   .block {
-    margin: 15px 0 30px 0;
+    margin: 15px 0 46px 0;
     max-width: 162px;
   }
   .block__header-lower {
@@ -1407,16 +1524,22 @@ a {
   .circle {
     width: 323px;
     height: 323px;
-    top: 31px;
-    right: 137px;
+    top: -6px;
+    left: 273px;
   }
   .header {
-    padding: 37px 34px 0 34px;
     height: 399px;
+    padding: 37px 34px 0 34px;
+  }
+  .header__wrap {
+    position: relative;
+    margin: 0 auto;
+    min-width: 700px;
+    max-width: 700px;
   }
   .header__primary--image {
-    top: 63px;
-    right: 247px;
+    top: 26px;
+    left: 344px;
     height: 336px;
     width: 143px;
   }
@@ -1425,16 +1548,16 @@ a {
     width: 124px;
     height: 126px;
     position: absolute;
-    top: 245px;
-    left: 34px;
+    top: 208px;
+    left: 0;
   }
   .header__tertiary--image {
     display: block;
     width: 168px;
     height: 133px;
     position: absolute;
-    top: 266px;
-    right: 34px;
+    top: 229px;
+    left: 532px;
     z-index: 4;
   }
   .header__container {
@@ -1457,15 +1580,15 @@ a {
     height: 18px;
     width: 18px;
     position: absolute;
-    left: 154px;
-    top: 345px;
+    left: 120px;
+    top: 310px;
   }
   .box {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 96px;
-    right: 44px;
+    top: 44px;
+    left: 657px;
     text-align: right;
   }
   .box__amount {
@@ -1486,11 +1609,11 @@ a {
   .box__icon {
     height: 16px;
     width: 16px;
-    fill: #fff;
     display: block;
     position: relative;
+    fill: #fff;
     top: 10px;
-    right: -34px;
+    left: 25px;
     z-index: -1;
   }
   .icon--circle {
@@ -1502,28 +1625,36 @@ a {
     width: 18px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header {
-    padding: 37px 115px 0 46px;
     height: 665px;
+    min-width: 1280px;
+  }
+  .header__wrap {
+    position: relative;
+    padding-right: 115px;
+    padding-left: 46px;
+    height: 502px;
+    min-width: 1280px;
+    max-width: 1280px;
   }
   .header__primary--image {
-    top: 108px;
-    right: 450px;
+    top: 71px;
+    left: 594px;
     height: 557px;
     width: 236px;
   }
   .header__secondary--image {
     width: 188px;
     height: 191px;
-    top: 429px;
+    top: 392px;
     left: 77px;
   }
   .header__tertiary--image {
     width: 293px;
     height: 232px;
-    top: 433px;
-    right: 109px;
+    top: 396px;
+    left: 878px;
   }
   .header__container {
     max-width: 200px;
@@ -1537,13 +1668,11 @@ a {
   .header__icon {
     height: 26px;
     width: 26px;
-    top: 583px;
+    top: 546px;
     left: 295px;
   }
   .menu {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .menu__mobile {
     display: none;
@@ -1575,12 +1704,12 @@ a {
   .circle {
     width: 538px;
     height: 538px;
-    top: 52px;
-    right: 267px;
+    top: 15px;
+    left: 475px;
   }
   .box {
-    top: 160px;
-    right: 115px;
+    top: 93px;
+    left: 1111px;
   }
   .box__amount {
     font-size: 46px;
@@ -1594,7 +1723,7 @@ a {
     height: 30px;
     width: 30px;
     top: 24px;
-    right: -60px;
+    left: 40px;
   }
   .block {
     margin: 84px 0 100px 69px;
@@ -1625,11 +1754,6 @@ a {
     width: 26px;
     height: 26px;
   }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> main
 }
 .review {
   display: block;
@@ -1648,14 +1772,9 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
-<<<<<<< HEAD
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .review__text::before {
   background-image: url("../images/svg/symbol-defs.svg#icon-quote-mark");
@@ -1666,14 +1785,6 @@ a {
 .review__text::after {
   background-image: repeating-linear-gradient(to bottom, red 30px, blue 1px);
   width: 100%;
-=======
-  -webkit-text-decoration: 1px solid #e1e1e1;
-          text-decoration: 1px solid #e1e1e1;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  text-underline-offset: 10px;
-  text-align: center;
->>>>>>> main
 }
 .review__background {
   background-color: #FAFAFA;
@@ -1682,17 +1793,8 @@ a {
   margin-bottom: 29px;
 }
 .review__dots {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: flex;
   justify-content: center;
->>>>>>> main
   max-height: 30px;
 }
 .review__data {
@@ -1705,13 +1807,8 @@ a {
   margin-bottom: 30px;
 }
 .review__home {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 86px;
 }
 .review__svg {
@@ -1733,8 +1830,4 @@ a {
   .review__data {
     font-size: 16px;
   }
->>>>>>> Stashed changes
-=======
-  text-align: center;
->>>>>>> main
 }/*# sourceMappingURL=main.css.map */
