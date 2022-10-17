@@ -14,10 +14,16 @@
   &--bright {
     background: $color-primary;
     color: $font-header-before;
+<<<<<<< Updated upstream
     fill: $font-header-before;
     &:hover,
     &:focus {
       background: $background-color-buttonHover;
+=======
+    &:hover,
+    &:target {
+      background: $background-color-button-hover;
+>>>>>>> Stashed changes
     }
   }
   &--color {
