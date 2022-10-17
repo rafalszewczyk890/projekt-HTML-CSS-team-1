@@ -759,7 +759,6 @@ a {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   footer {
     background-color: #fff5f6;
-    width: 100%;
   }
   .footer {
     display: -webkit-box;
