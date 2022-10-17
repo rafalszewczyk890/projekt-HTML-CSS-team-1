@@ -1,57 +1,76 @@
 .header {
   background-color: $background-color-header;
   padding: 6px 20px 0 20px;
-  height: 502px;
-  min-width: 320px;
-
+  &__wrap {
+    position: relative;
+    margin: 0 auto;
+    min-width: 280px;
+    max-width: 280px;
+  }
+  &__icon {
+    display: none;
+  }
   &__container {
     display: none;
   }
-
   &__primary--image {
     position: absolute;
     z-index: 2;
-    top: 92px;
-    right: 32px;
+    top: 86px;
+    left: 111px;
     height: 410px;
     width: 171px;
   }
-
   &__secondary--image {
     display: none;
   }
-
   &__tertiary--image {
     display: none;
   }
 }
-
 .box {
   display: none;
 }
-
 .menu {
-  min-width: 320px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 280px;
   &__logo {
     width: 199px;
     height: 50px;
   }
-
   &__list {
     display: none;
   }
-
   &__button {
     display: none;
   }
-
   &__button:hover {
     background-color: #ecebeb;
     cursor: pointer;
   }
+  &__box {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  &__icon {
+    position: relative;
+    z-index: 3;
+    stroke: #d41443;
+    fill: none;
+  }
+  &__mobile {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  &__mobile:hover {
+    cursor: pointer;
+  }
 }
-
 .block {
   display: flex;
   flex-direction: column;
@@ -59,30 +78,26 @@
   max-width: 218px;
   gap: 19px;
   line-height: 35px;
-
   &__header {
     margin: 0;
     z-index: 3;
     top: 0;
+    line-height: 1;
   }
-
   &__header-lower {
     @include mainHeading;
     font-size: 30px;
     color: $color-primary;
   }
-
   &__header-higher {
     @include mainHeading;
     font-size: 48px;
   }
-
   &__box {
     display: flex;
     gap: 8px;
     z-index: 3;
   }
-
   &__button-first,
   &__button-second {
     height: 24px;
@@ -92,46 +107,40 @@
     display: flex;
     align-items: center;
   }
-
   &__button-first {
     background-color: $font-header-before;
     color: $color-primary;
+    width: 62px;
   }
-
   &__button-first:hover {
     background-color: $dot;
     cursor: pointer;
   }
-
   &__button-second {
     background-color: $color-primary;
     color: $font-header-before;
+    width: 86px;
   }
-
   &__button-second:hover {
     background-color: #ecebeb;
     cursor: pointer;
   }
 }
-
 .circle {
   width: 345px;
   height: 345px;
   background-color: $font-header;
   position: absolute;
   border-radius: 50%;
-  top: 83px;
-  right: -62px;
+  top: 77px;
+  left: 16px;
 }
-
 .icon--circle {
   display: none;
 }
-
 .icon--arrow {
   display: none;
 }
-
 .backdrop {
   display: flex;
   position: fixed;
@@ -143,7 +152,6 @@
   transition: ease-in-out 500ms;
   z-index: 6;
 }
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -174,12 +182,10 @@
     top: 10px;
     right: -360px;
   }
-
   &__button:hover {
     cursor: pointer;
     background-color: #ecebeb;
   }
-
   &__header {
     font-family: 'DM Sans';
     font-weight: 700;
@@ -235,42 +241,123 @@
     line-height: 1.3;
     letter-spacing: 0.03em;
   }
-  &__acceptance-input{
+  &__acceptance-input {
     margin-right: 5px;
   }
-  &__link{
+  &__link {
     color: $font-header-before;
   }
-  &__submit{
+  &__submit {
     width: 160px;
-      height: 44px;
-      background-color: $background-color-milkshakes;
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 21px;
-      color: $color-primary;
+    height: 44px;
+    background-color: #d41443;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-primary;
   }
-  &__submit:hover{
+  &__submit:hover {
     cursor: pointer;
     background-color: $color-primary;
     color: $font-header-before;
   }
 }
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e17992;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.mobile-icon {
+  stroke: $color-primary;
+  fill: none;
+}
+.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  &__button {
+    margin-top: 60px;
+    display: flex;
+    gap: 16px;
+    width: 209px;
+    height: 44px;
+    background-color: $color-primary;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $font-header-before;
+  }
+  &__button:hover {
+    background-color: #ecebeb;
+    cursor: pointer;
+  }
+  &__arrow {
+    stroke: #d41443;
+    fill: none;
+    position: relative;
+    top: 2px;
+  }
+  &__menu {
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  &__item {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $color-primary;
+    border: solid 1px #e18298;
+    padding: 13px 0 11px 21px;
+    height: 42px;
+  }
+  &__item:first-child {
+    color: #d41443;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu {
-    display: flex;
-    justify-content: space-between;
-
+    align-items: flex-start;
     &__button {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 37px 0 37px;
       width: 160px;
       height: 44px;
       background-color: $color-primary;
@@ -280,67 +367,68 @@
       line-height: 21px;
       color: $font-header-before;
     }
+    &__arrow {
+      position: relative;
+      top: 2px;
+      fill: $font-header-before;
+    }
   }
-
   .block {
-    margin: 15px 0 44px 0;
+    margin: 15px 0 46px 0;
     max-width: 162px;
-
     &__header-lower {
       font-size: 22px;
       line-height: 1.14;
     }
-
     &__header-higher {
       font-size: 34px;
       line-height: 1.14;
     }
   }
-
   .circle {
     width: 323px;
     height: 323px;
-    top: 31px;
-    right: 137px;
+    top: -6px;
+    left: 273px;
   }
-
   .header {
-    padding: 37px 34px 0 34px;
     height: 399px;
-
+    padding: 37px 34px 0 34px;
+    &__wrap {
+      position: relative;
+      margin: 0 auto;
+      min-width: 700px;
+      max-width: 700px;
+    }
     &__primary--image {
-      top: 63px;
-      right: 247px;
+      top: 26px;
+      left: 344px;
       height: 336px;
       width: 143px;
     }
-
     &__secondary--image {
       display: block;
       width: 124px;
       height: 126px;
       position: absolute;
-      top: 245px;
-      left: 34px;
+      top: 208px;
+      left: 0;
     }
-
     &__tertiary--image {
       display: block;
       width: 168px;
       height: 133px;
       position: absolute;
-      top: 266px;
-      right: 34px;
+      top: 229px;
+      left: 532px;
       z-index: 4;
     }
-
     &__container {
       display: block;
       max-width: 114px;
       max-height: 48px;
       margin-left: 120px;
     }
-
     &__paragraph {
       font-style: 'DM Sans';
       font-weight: 400;
@@ -350,16 +438,22 @@
       letter-spacing: 0.06em;
       text-align: left;
     }
+    &__icon {
+      display: block;
+      height: 18px;
+      width: 18px;
+      position: absolute;
+      left: 120px;
+      top: 310px;
+    }
   }
-
   .box {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 96px;
-    right: 44px;
+    top: 44px;
+    left: 657px;
     text-align: right;
-
     &__amount {
       font-family: 'Titan One';
       font-weight: 400;
@@ -368,7 +462,6 @@
       color: $font-header-before;
       z-index: 4;
     }
-
     &__description {
       font-family: 'DM Sans';
       font-weight: 400;
@@ -376,19 +469,17 @@
       line-height: 1;
       color: $color-primary;
     }
-
     &__icon {
       height: 16px;
       width: 16px;
-      fill: $color-primary;
       display: block;
       position: relative;
+      fill: $color-primary;
       top: 10px;
-      right: -34px;
+      left: 25px;
       z-index: -1;
     }
   }
-
   .icon--circle {
     display: block;
     fill: $color-primary;
@@ -398,58 +489,67 @@
     width: 18px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .header {
-    padding: 37px 115px 0 46px;
     height: 665px;
-
+    min-width: 1280px;
+    &__wrap {
+      position: relative;
+      padding-right: 115px;
+      padding-left: 46px;
+      height: 502px;
+      min-width: 1280px;
+      max-width: 1280px;
+    }
     &__primary--image {
-      top: 108px;
-      right: 450px;
+      top: 71px;
+      left: 594px;
       height: 557px;
       width: 236px;
     }
-
     &__secondary--image {
       width: 188px;
       height: 191px;
-      top: 429px;
+      top: 392px;
       left: 77px;
     }
-
     &__tertiary--image {
       width: 293px;
       height: 232px;
-      top: 433px;
-      right: 109px;
+      top: 396px;
+      left: 878px;
     }
-
     &__container {
       max-width: 200px;
       max-height: 78px;
       margin-left: 249px;
     }
-
     &__paragraph {
       font-size: 14px;
       line-height: 1.4;
     }
+    &__icon {
+      height: 26px;
+      width: 26px;
+      top: 546px;
+      left: 295px;
+    }
   }
-
   .menu {
+    align-items: center;
+    &__mobile {
+      display: none;
+    }
     &__navigation {
       display: flex;
       align-items: center;
     }
-
     &__list {
       display: flex;
       justify-content: space-between;
       gap: 35px;
       z-index: 2;
     }
-
     &__item {
       font-family: 'DM Sans';
       font-weight: 700;
@@ -457,70 +557,63 @@
       color: $color-primary;
       line-height: 1.3;
     }
-
     &__item:first-child {
       color: $font-header-before;
     }
-
     &__item:hover {
       cursor: pointer;
       color: $font-header-before;
     }
   }
-
   .circle {
     width: 538px;
     height: 538px;
-    top: 52px;
-    right: 267px;
+    top: 15px;
+    left: 475px;
   }
-
   .box {
-    top: 160px;
-    right: 115px;
-
+    top: 93px;
+    left: 1111px;
     &__amount {
       font-size: 46px;
       line-height: 1.1;
     }
-
     &__description {
       font-size: 14px;
       line-height: 1.1;
     }
-
     &__icon {
       height: 30px;
       width: 30px;
       top: 24px;
-      right: -60px;
+      left: 40px;
     }
   }
-
   .block {
-    margin: 84px 0 112px 69px;
+    margin: 84px 0 100px 69px;
     max-width: 277px;
     gap: 25px;
-
     &__box {
       gap: 15px;
     }
-
     &__header-lower {
       font-size: 38px;
     }
-
     &__header-higher {
       font-size: 58px;
     }
-
     &__button-first,
     &__button-second {
       height: 40px;
       font-size: 14px;
     }
+    &__button-first {
+      width: 104px;
+    }
+    &__button-second {
+      width: 138px;
+    }
   }
-
   .icon--circle {
     margin-left: 249px;
     width: 26px;
