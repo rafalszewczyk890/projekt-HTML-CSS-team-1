@@ -560,60 +560,6 @@ a {
     left: 15px;
     right: 15px;
   }
-<<<<<<< Updated upstream
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .products__item {
-    width: 220px;
-  }
-  .products__title {
-    margin-top: 122px;
-  }
-  .products__secondheader {
-    font-size: 26px;
-    line-height: 0.866;
-  }
-  .products__header {
-    font-size: 54px;
-    line-height: 1.145;
-    margin-bottom: 150px;
-  }
-  .products__list {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    gap: 20px;
-  }
-  .products__name {
-    font-family: "Titan One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 155px;
-  }
-  .products__name::after {
-    content: ". . .";
-    font-weight: 700;
-    font-size: 20px;
-    display: block;
-    margin: 30px 0px;
-  }
-  .products__decription {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.76;
-=======
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products__item {
@@ -728,205 +674,6 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .products__name {
-    font-family: "Titan One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.133;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 163px;
-  }
-  .products__name::after {
-    content: ". . .";
-    font-weight: 700;
-    font-size: 20px;
-    display: block;
-    margin: 30px 0px;
-  }
-  .products__decription {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.76;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    margin: 0px 44px;
-    width: 241px;
-    height: 106px;
-    overflow: hidden;
-  }
-  .products__button {
-    margin-top: 62px;
-    cursor: pointer;
-  }
-  .products__item--icecream::before {
-    content: url(../images/products-icecram-desktop.png);
-    display: block;
-    position: absolute;
-    top: -200px;
-    left: 3px;
-    right: 3px;
-  }
-  .products__item--icecoffe::before {
-    content: url(../images/products-icecoffe-desktop.png);
-    display: block;
-    position: absolute;
-    top: -200px;
-    left: 3px;
-    right: 3px;
-  }
-  .products__item--milkshakes::before {
-    content: url(../images/products-milkshake-desktop.png);
-    display: block;
-    position: absolute;
-    top: -200px;
-    left: 3px;
-    right: 3px;
-  }
-}
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gallery img {
-  width: 100%;
-  height: 100%;
-  max-width: 1280px;
-  max-height: 430px;
-}
-
-.footer__line {
-  border: rgb(225, 225, 225) solid 1px;
-  width: 100%;
-  position: absolute;
-  bottom: 50px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  footer {
-    background-color: #fff5f6;
-    width: 100%;
-  }
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 258px;
-    position: relative;
-  }
-  .footer__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
->>>>>>> Stashed changes
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    margin: 0px 11px;
-    width: 198px;
-    height: 124px;
-    overflow: hidden;
-  }
-  .products__button {
-    margin-top: 30px;
-    cursor: pointer;
-  }
-  .products__item--icecream::before {
-    content: url(../images/products-icecram-tablet.png);
-    display: block;
-    position: absolute;
-    top: -100px;
-    left: 5px;
-    right: 5px;
-  }
-  .products__item--icecoffe::before {
-    content: url(../images/products-icecoffe-tablet.png);
-    display: block;
-    position: absolute;
-    top: -100px;
-    left: 5px;
-    right: 5px;
-  }
-  .products__item--milkshakes::before {
-    content: url(../images/products-milkshake-tablet.png);
-    display: block;
-    position: absolute;
-    top: -100px;
-    left: 5px;
-    right: 5px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .products__item {
-    width: 330px;
-    height: 525px;
-  }
-  .products__title {
-    margin-top: 127px;
-  }
-  .products__secondheader {
-    font-size: 30px;
-    line-height: 0.882;
-  }
-  .products__header {
-    font-size: 58px;
-    line-height: 0.878;
-    margin-bottom: 259px;
-  }
-<<<<<<< Updated upstream
-  .products__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-=======
-  .footer__icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 24px;
-  }
-  .footer__icon {
-    text-decoration: none;
-    width: 34px;
-    height: 34px;
-    background-color: #ffa5ba;
-    border-radius: 50%;
-    fill: #fff;
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
->>>>>>> Stashed changes
   }
   .products__name {
     font-family: "Titan One";
@@ -1018,46 +765,20 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< Updated upstream
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 43px;
-=======
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 258px;
->>>>>>> Stashed changes
   }
   .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-<<<<<<< Updated upstream
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-=======
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
->>>>>>> Stashed changes
   }
   .footer__tittle {
     text-align: start;
@@ -1151,23 +872,6 @@ a {
     width: 100%;
   }
   .footer {
-<<<<<<< Updated upstream
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    height: 247px;
->>>>>>> Stashed changes
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1182,20 +886,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-<<<<<<< Updated upstream
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-=======
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    text-align: left;
-    gap: 258px;
->>>>>>> Stashed changes
   }
   .footer__tittle {
     max-width: 400px;
@@ -1227,25 +920,11 @@ a {
     margin: 0;
   }
   .footer__icons {
-<<<<<<< Updated upstream
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 36px 46px 0;
     gap: 30px;
-    right: 0;
-    top: 0;
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 24px;
-    padding-bottom: 51px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
->>>>>>> Stashed changes
   }
   .footer__icon {
     text-decoration: none;
@@ -1292,20 +971,17 @@ a {
     line-height: 1.85;
     letter-spacing: 0.02em;
     text-align: center;
-<<<<<<< Updated upstream
     color: #907e82;
     margin: 22px 91px 25px 79px;
-=======
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 9px 0 10px 0;
+  }
+  .footer__iconss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: relative;
->>>>>>> Stashed changes
+    margin-top: 0;
+    margin-left: 468px;
+    width: 320px;
   }
 }
 .contacts {
@@ -1493,10 +1169,7 @@ a {
 .header {
   background-color: #ffb8ca;
   padding: 6px 20px 0 20px;
-<<<<<<< Updated upstream
   height: 502px;
-=======
->>>>>>> Stashed changes
 }
 .header__wrap {
   position: relative;

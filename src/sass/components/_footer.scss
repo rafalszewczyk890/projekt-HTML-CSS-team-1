@@ -1,11 +1,5 @@
 .footer__line {
   border: $footer-line solid 1px;
-<<<<<<< Updated upstream
-=======
-  width: 100%;
-  position: absolute;
-  bottom: 50px;
->>>>>>> Stashed changes
 }
 @media (min-width: 305px) {
   footer {
@@ -15,13 +9,7 @@
   .footer {
     display: flex;
     flex-direction: column;
-<<<<<<< Updated upstream
     gap: 43px;
-=======
-    gap: 258px;
-    position: relative;
-
->>>>>>> Stashed changes
     &__container {
       flex-direction: column;
       justify-content: center;
@@ -109,7 +97,6 @@
     width: 100%;
   }
   .footer {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 92px;
@@ -145,12 +132,9 @@
       margin: 0;
     }
     &__icons {
-      position: absolute;
       display: flex;
       padding: 0 36px 46px 0;
       gap: 30px;
-      right: 0;
-      top:0;
     }
     &__icon {
       text-decoration: none;
@@ -196,45 +180,12 @@
       color: $font-color-subtitle;
       margin: 22px 91px 25px 79px;
     }
-    // // &__iconss {
-    // //   display: inline-flex;
-    // //   position: absolute;
-    // //   margin-top: 0;
-    // //   // width: 320px;
-    // }
-  }
-}
-
-
-<<<<<<< Updated upstream
-=======
-      &-color {
-        color: $font-header-before;
-        font-family: DM Sans;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-        text-align: left;
-      }
-    }
-    &__ending {
-      font-family: DM Sans;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.85;
-      letter-spacing: 0.02em;
-      text-align: left;
-      color: $font-color-subtitle;
-      text-align: center;
-      justify-content: center;
-      padding: 9px 0 10px 0;
+    &__iconss {
+      display: flex;
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      position: relative;
+      margin-top: 0;
+      margin-left: 468px;
+      width: 320px;
     }
   }
 }
->>>>>>> Stashed changes
