@@ -293,12 +293,12 @@ a {
     content: "";
     position: absolute;
     width: 100vw;
-    height: 534px;
+    height: 41.5625vw;
     background-image: url("../images/about-milk2x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    top: 20%;
+    top: 15%;
     left: calc(50% - 50vw);
     z-index: 1;
   }
