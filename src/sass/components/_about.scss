@@ -23,6 +23,7 @@
     margin: 0 auto;
   }
 }
+
 .about-description {
   min-width: 280px;
   &__image {
@@ -35,6 +36,27 @@
     }
   }
   &__text {
+    &:before {
+      @media screen and (max-width: 768px) {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 30vw;
+        background-image: url('../images/about-milk1x.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 30vh;
+        left: calc(50% - 50vw);
+        z-index: 1;
+        @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url('../images/about-milk2x.png');
+        }
+      }
+    }
     padding: 0 50px;
     @include articleText-mobile;
     position: relative;
@@ -47,27 +69,6 @@
       margin-bottom: 47px;
       color: $font-color-subtitle;
       z-index: 3;
-      &:before {
-        @media screen and (max-width: 768px) {
-          content: '';
-          position: absolute;
-          width: 100vw;
-          height: 30vw;
-          background-image: url('../images/about-milk1x.png');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          top: 50%;
-          left: -20px;
-          z-index: 1;
-          @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background-image: url('../images/about-milk2x.png');
-          }
-        }
-      }
     }
   }
 }
@@ -182,17 +183,18 @@
       @include mainHeading-desktop;
     }
   }
+
   .about-description:before {
     content: '';
     position: absolute;
-    width: 1282px;
+    width: 100vw;
     height: 534px;
     background-image: url('../images/about-milk2x.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     top: 20%;
-    left: -150px;
+    left: calc(50% - 50vw);
     z-index: 1;
   }
   .about-description {
