@@ -15,10 +15,22 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 2.55;
-        text-decoration: 1px solid $underline;
-        text-decoration-line:underline;
-        text-underline-offset:10px;
+        // text-decoration: 1px solid $underline;
+        // text-decoration-line:underline;
+        // text-underline-offset:10px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        &::before {
+            background-image: url("../images/svg/symbol-defs.svg#icon-quote-mark");
+            width: 54px;
+            height: 40px;
+            position: relative;
+        }
+        &::after {
+            background-image: repeating-linear-gradient(to bottom, red 30px,blue 1px);
+            width:100%;
+        }
     }
     &__background{
         background-color:#FAFAFA;
@@ -36,6 +48,31 @@
         margin-bottom: 30px;
     }
     &__home{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom:86px;
     }
+    &__svg{
+        max-width: 18px;
+    }
+}
+@media screen and (min-width: 768px) {
+.review{
+    &__text{
+        font-size: 14px;
+    }
+    &__data{
+        font-size: 14px;
+    }
+}}
+
+@media screen and (min-width: 1200px) {
+.review{
+    &__text{
+        font-size:16px;
+    }
+    &__data{
+        font-size:16px;
+    }
+}
 }
