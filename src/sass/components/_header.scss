@@ -1,6 +1,7 @@
 .header {
   background-color: $background-color-header;
   padding: 6px 20px 0 20px;
+    overflow: hidden;
   &__wrap {
     position: relative;
     margin: 0 auto;
