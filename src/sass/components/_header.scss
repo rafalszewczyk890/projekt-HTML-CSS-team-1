@@ -1,9 +1,12 @@
 .header {
   background-color: $background-color-header;
-  margin: 0 auto;
   padding: 6px 20px 0 20px;
-  height: 502px;
-  min-width: 320px;
+  &__wrap {
+    position: relative;
+    margin: 0 auto;
+    min-width: 280px;
+    max-width: 280px;
+  }
   &__icon {
     display: none;
   }
@@ -13,8 +16,8 @@
   &__primary--image {
     position: absolute;
     z-index: 2;
-    top: 92px;
-    right: 32px;
+    top: 86px;
+    left: 111px;
     height: 410px;
     width: 171px;
   }
@@ -29,10 +32,10 @@
   display: none;
 }
 .menu {
-  min-width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 280px;
   &__logo {
     width: 199px;
     height: 50px;
@@ -79,6 +82,7 @@
     margin: 0;
     z-index: 3;
     top: 0;
+    line-height: 1;
   }
   &__header-lower {
     @include mainHeading;
@@ -128,8 +132,8 @@
   background-color: $font-header;
   position: absolute;
   border-radius: 50%;
-  top: 83px;
-  right: -62px;
+  top: 77px;
+  left: 16px;
 }
 .icon--circle {
   display: none;
@@ -325,25 +329,25 @@
     position: relative;
     top: 2px;
   }
-  &__menu{
+  &__menu {
     width: 100%;
   }
-  &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     justify-content: left;
   }
-  &__item{
+  &__item {
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     color: $color-primary;
-    border: solid 1px #E18298;
+    border: solid 1px #e18298;
     padding: 13px 0 11px 21px;
     height: 42px;
   }
-  &__item:first-child{
+  &__item:first-child {
     color: #d41443;
   }
 }
@@ -370,7 +374,7 @@
     }
   }
   .block {
-    margin: 15px 0 30px 0;
+    margin: 15px 0 46px 0;
     max-width: 162px;
     &__header-lower {
       font-size: 22px;
@@ -384,15 +388,21 @@
   .circle {
     width: 323px;
     height: 323px;
-    top: 31px;
-    right: 137px;
+    top: -6px;
+    left: 273px;
   }
   .header {
-    padding: 37px 34px 0 34px;
     height: 399px;
+    padding: 37px 34px 0 34px;
+    &__wrap {
+      position: relative;
+      margin: 0 auto;
+      min-width: 700px;
+      max-width: 700px;
+    }
     &__primary--image {
-      top: 63px;
-      right: 247px;
+      top: 26px;
+      left: 344px;
       height: 336px;
       width: 143px;
     }
@@ -401,16 +411,16 @@
       width: 124px;
       height: 126px;
       position: absolute;
-      top: 245px;
-      left: 34px;
+      top: 208px;
+      left: 0;
     }
     &__tertiary--image {
       display: block;
       width: 168px;
       height: 133px;
       position: absolute;
-      top: 266px;
-      right: 34px;
+      top: 229px;
+      left: 532px;
       z-index: 4;
     }
     &__container {
@@ -433,16 +443,16 @@
       height: 18px;
       width: 18px;
       position: absolute;
-      left: 154px;
-      top: 345px;
+      left: 120px;
+      top: 310px;
     }
   }
   .box {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 96px;
-    right: 44px;
+    top: 44px;
+    left: 657px;
     text-align: right;
     &__amount {
       font-family: 'Titan One';
@@ -462,11 +472,11 @@
     &__icon {
       height: 16px;
       width: 16px;
-      fill: $color-primary;
       display: block;
       position: relative;
+      fill: $color-primary;
       top: 10px;
-      right: -34px;
+      left: 25px;
       z-index: -1;
     }
   }
@@ -479,27 +489,35 @@
     width: 18px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header {
-    padding: 37px 115px 0 46px;
     height: 665px;
+    min-width: 1280px;
+    &__wrap {
+      position: relative;
+      padding-right: 115px;
+      padding-left: 46px;
+      height: 502px;
+      min-width: 1280px;
+      max-width: 1280px;
+    }
     &__primary--image {
-      top: 108px;
-      right: 450px;
+      top: 71px;
+      left: 594px;
       height: 557px;
       width: 236px;
     }
     &__secondary--image {
       width: 188px;
       height: 191px;
-      top: 429px;
+      top: 392px;
       left: 77px;
     }
     &__tertiary--image {
       width: 293px;
       height: 232px;
-      top: 433px;
-      right: 109px;
+      top: 396px;
+      left: 878px;
     }
     &__container {
       max-width: 200px;
@@ -513,7 +531,7 @@
     &__icon {
       height: 26px;
       width: 26px;
-      top: 583px;
+      top: 546px;
       left: 295px;
     }
   }
@@ -550,12 +568,12 @@
   .circle {
     width: 538px;
     height: 538px;
-    top: 52px;
-    right: 267px;
+    top: 15px;
+    left: 475px;
   }
   .box {
-    top: 160px;
-    right: 115px;
+    top: 93px;
+    left: 1111px;
     &__amount {
       font-size: 46px;
       line-height: 1.1;
@@ -568,7 +586,7 @@
       height: 30px;
       width: 30px;
       top: 24px;
-      right: -60px;
+      left: 40px;
     }
   }
   .block {
