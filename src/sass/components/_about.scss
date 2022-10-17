@@ -37,6 +37,7 @@
   &__text {
     padding: 0 50px;
     @include articleText-mobile;
+    position: relative;
     &--main {
       margin-top: 46px;
       margin-bottom: 47px;
@@ -45,25 +46,35 @@
     &--secondary {
       margin-bottom: 47px;
       color: $font-color-subtitle;
-      @media screen and (max-width: 768px) {
-        z-index: 2;
-        position: relative;
-        // background-image: url(./images/about-milk1x.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-      @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        // background-image: url(./images/about-milk2x.png);
+      z-index: 3;
+      &:before {
+        @media screen and (max-width: 768px) {
+          content: '';
+          position: absolute;
+          width: 100vw;
+          height: 30vw;
+          background-image: url('../images/about-milk1x.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          top: 50%;
+          left: -20px;
+          z-index: 1;
+          @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('../images/about-milk2x.png');
+          }
+        }
       }
     }
   }
 }
 .button__vector {
   margin-left: 13.62px;
+  stroke: #d41443;
+  fill: none;
 }
 .flex-center {
   @include flexCenter;
@@ -171,9 +182,20 @@
       @include mainHeading-desktop;
     }
   }
+  .about-description:before {
+    content: '';
+    position: absolute;
+    width: 1282px;
+    height: 534px;
+    background-image: url('../images/about-milk2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 20%;
+    left: -150px;
+    z-index: 1;
+  }
   .about-description {
-    // background-image: url(./images/about-milk1x.png);
-    z-index: 2;
     position: relative;
     &__image {
       width: 516px;
@@ -182,6 +204,7 @@
     &__text {
       margin-left: 74px;
       width: 463px;
+      z-index: 2;
     }
   }
   .flex-center {

@@ -16,8 +16,8 @@
     color: $font-header-before;
     fill: $font-header-before;
     &:hover,
-    &:focus {
-      background: $background-color-buttonHover;
+    &:target {
+      background: $background-color-button-hover;
     }
   }
   &--color {
