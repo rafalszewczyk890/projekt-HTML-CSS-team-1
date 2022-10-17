@@ -1394,15 +1394,23 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
-  -webkit-text-decoration: 1px solid #e1e1e1;
-          text-decoration: 1px solid #e1e1e1;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  text-underline-offset: 10px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.review__text::before {
+  background-image: url("../images/icon-svg.svg");
+  width: 54px;
+  height: 40px;
+  position: absolute;
+}
+.review__text::after {
+  background-image: repeating-linear-gradient(to bottom, red 30px, blue 1px);
+  width: 100%;
 }
 .review__background {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 50px;
   margin-top: 29px;
   margin-bottom: 29px;
@@ -1422,5 +1430,27 @@ a {
   margin-bottom: 30px;
 }
 .review__home {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 86px;
+}
+.review__svg {
+  max-width: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .review__text {
+    font-size: 14px;
+  }
+  .review__data {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .review__text {
+    font-size: 16px;
+  }
+  .review__data {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
