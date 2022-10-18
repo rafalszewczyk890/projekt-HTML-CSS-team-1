@@ -948,9 +948,11 @@ a {
   }
 }
 .contacts {
-  background-color: #fff5f6;
   padding-top: 86px;
   padding-bottom: 113px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.445) 15%, rgba(255, 245, 246, 0.6980392157) 15%), url("../images/sectionbg2-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .contacts__card {
   width: 100%;
@@ -1043,7 +1045,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .contacts {
-    padding-top: 132px;
+    padding-top: 0px;
     padding-bottom: 165px;
   }
   .contacts__list {
@@ -1795,7 +1797,7 @@ a {
   width: 100%;
 }
 .review__background {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 50px;
   margin-top: 29px;
   margin-bottom: 29px;
@@ -1817,7 +1819,6 @@ a {
 .review__home {
   display: flex;
   justify-content: center;
-  margin-bottom: 86px;
 }
 .review__svg {
   max-width: 18px;
