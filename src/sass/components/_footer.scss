@@ -197,7 +197,7 @@
     width: 100%;
   }
   .footer {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     justify-content: space-around;
     max-height: 247px;
@@ -235,6 +235,7 @@
       text-transform: uppercase;
       margin: 0 0 0 115px;
       text-align: left;
+      padding-bottom: 97px;
     
     }
     &__icons {
@@ -289,8 +290,7 @@
     &__iconss {
       display: flex;
       position: absolute;
-      right: 0;
+      right:2;
       top:0;
     }
-   
 }}
