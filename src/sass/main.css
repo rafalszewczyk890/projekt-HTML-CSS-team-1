@@ -1075,7 +1075,7 @@ a {
     min-width: 502px;
     color: #d41443;
     font-family: DM Sans;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.02em;
@@ -1095,7 +1095,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    right: 2;
+    right: 115px;
     top: 0;
   }
 }
