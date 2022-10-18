@@ -81,7 +81,12 @@
   @include flexCenter;
 }
 .about-achievements {
-  @include flexCenter;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 39px;
+  padding-left: 50px;
   margin-top: 39px;
   &__items {
     max-width: 230px;

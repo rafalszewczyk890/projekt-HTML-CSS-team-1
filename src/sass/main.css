@@ -173,9 +173,11 @@ a {
 
 .about-achievements {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  margin-top: 39px;
+  padding-left: 50px;
   margin-top: 39px;
 }
 .about-achievements__items {
@@ -1622,7 +1624,7 @@ a {
     width: 16px;
     display: block;
     position: relative;
-    fill: blue;
+    fill: #fff;
     top: 10px;
     left: 30px;
     z-index: -1;
