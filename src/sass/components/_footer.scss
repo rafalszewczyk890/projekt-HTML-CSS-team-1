@@ -99,6 +99,7 @@
   .footer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 92px;
     &__container {
       flex-direction: column;
@@ -197,20 +198,20 @@
     width: 100%;
   }
   .footer {
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    flex-direction: column;
-    height: 247px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-height: 247px;
     gap: 258px;
     position: relative;
 
     
     &__container {
       flex-direction: column;
-      justify-content: center;
+     
     }
     &__tittle {
-      position: absolute;
       min-width: 700px;
       text-align: left;
       display: inline-block;
@@ -221,9 +222,11 @@
       letter-spacing: 0.04em;
       color: $font-header;
       text-transform: uppercase;
-      margin: 0 0 115px 0;
+      margin: 0 0 0 115px;
+      padding-bottom:15px;
     }
     &__text {
+      min-width: 700px;
       justify-content: flex-start;
       font-family: Titan One;
       font-size: 58px;
@@ -232,14 +235,14 @@
       letter-spacing: 0.06em;
       color: $font-header-before;
       text-transform: uppercase;
-      padding: 0 0 0 115px;
+      margin: 0 0 0 115px;
       text-align: left;
-      margin: 0;
+      padding-bottom: 97px;
+    
     }
     &__icons {
       justify-content: flex-end;
       display: flex;
-      padding: 0 121px 51px 0;
       gap: 24px;
     }
     &__icon {
@@ -270,7 +273,7 @@
         min-width: 502px;
         color: $font-header-before;
         font-family: DM Sans;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0.02em;
@@ -286,5 +289,10 @@
       color: $font-color-subtitle;
       margin: 9px 0 10px 0;
     }
-   
+    &__iconss {
+      display: flex;
+      position: absolute;
+      right:115px;
+      top:0;
+    }
 }}
