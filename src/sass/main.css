@@ -1622,7 +1622,7 @@ a {
     width: 16px;
     display: block;
     position: relative;
-    fill: #fff;
+    fill: blue;
     top: 10px;
     left: 30px;
     z-index: -1;
