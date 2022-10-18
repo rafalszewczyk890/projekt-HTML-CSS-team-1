@@ -5,6 +5,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    color: #d7214d;
   }
   &__title {
     text-align: center;
@@ -86,6 +87,7 @@
     &__button {
       margin-top: 30px;
       cursor: pointer;
+      
     }
   }
   .products__item--icecream::before {
