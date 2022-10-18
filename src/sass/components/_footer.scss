@@ -189,3 +189,102 @@
     }
   }
 }
+
+
+@media (min-width: 1200px) {
+  footer {
+    background-color: $background-color-how;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 247px;
+    gap: 258px;
+    position: relative;
+
+    
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__tittle {
+      position: absolute;
+      min-width: 700px;
+      text-align: left;
+      display: inline-block;
+      font-family: Titan One;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+      color: $font-header;
+      text-transform: uppercase;
+      margin: 0 0 115px 0;
+    }
+    &__text {
+      justify-content: flex-start;
+      font-family: Titan One;
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.06em;
+      color: $font-header-before;
+      text-transform: uppercase;
+      padding: 0 0 0 115px;
+      text-align: left;
+      margin: 0;
+    }
+    &__icons {
+      justify-content: flex-end;
+      display: flex;
+      padding: 0 121px 51px 0;
+      gap: 24px;
+    }
+    &__icon {
+      text-decoration: none;
+      width: 34px;
+      height: 34px;
+      background-color: $font-header;
+      border-radius: 50%;
+      fill: $color-primary;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon:hover,
+    &__icon:focus {
+      background-color: $font-header-before;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__contact {
+      min-width: 502px;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: $color-secondary;
+      text-align:left;
+      margin: 0 36px 0 0;
+      &--color {
+        min-width: 502px;
+        color: $font-header-before;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+      }
+    }
+    &__ending {
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $font-color-subtitle;
+      margin: 9px 0 10px 0;
+    }
+   
+}}
