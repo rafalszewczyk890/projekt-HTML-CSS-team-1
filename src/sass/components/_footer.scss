@@ -200,16 +200,14 @@
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    height: 247px;
+    max-height: 247px;
     gap: 258px;
     position: relative;
 
     
     &__container {
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: start;
-      text-align: left;
+     
     }
     &__tittle {
       min-width: 700px;
@@ -291,9 +289,8 @@
     &__iconss {
       display: flex;
       position: absolute;
-      top: 0;
       right: 0;
-      width: 320px;
+      top:0;
     }
    
 }}

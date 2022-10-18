@@ -998,7 +998,7 @@ a {
             justify-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 247px;
+    max-height: 247px;
     gap: 258px;
     position: relative;
   }
@@ -1007,13 +1007,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    text-align: left;
   }
   .footer__tittle {
     min-width: 700px;
@@ -1103,9 +1096,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 0;
     right: 0;
-    width: 320px;
+    top: 0;
   }
 }
 .contacts {
