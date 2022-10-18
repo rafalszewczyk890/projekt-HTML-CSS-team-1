@@ -92,103 +92,107 @@
   }
 }
 @media (min-width: 768px) {
-  .footer__line {
-    border: $footer-line solid 1px;
+  footer {
+    background-color: $background-color-how;
+    width: 100%;
   }
-    footer {
-      background-color: $background-color-how;
-      width: 100%;
-    }
-    .footer {
-      max-width: 1199px;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 92px;
+    flex-wrap: wrap;
+    &__container {
       display: flex;
       flex-direction: column;
-      gap: 92px;
-      align-content: flex-start;
-      &__container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-      }
-      &__tittle {
-        text-align: start;
-        display: inline-block;
-        font-family: Titan One;
-        font-size: 26px;
-        font-weight: 400;
-        line-height: 1.145;
-        letter-spacing: 0.04em;
-        color: $font-header;
-        text-transform: uppercase;
-        padding: 0 0 16px 36px;
-      }
-      &__text {
-        justify-content: flex-start;
-        font-family: Titan One;
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 1.145;
-        letter-spacing: 0.06em;
+      justify-content: center;
+
+    }
+    &__tittle {
+      max-width: 400px;
+      text-align: left;
+      display: inline-block;
+      font-family: Titan One;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+      color: $font-header;
+      text-transform: uppercase;
+      padding: 0 0 16px 36px;
+    }
+    &__text {
+      max-width: 400px;
+      justify-content: flex-start;
+      font-family: Titan One;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.06em;
+      color: $font-header-before;
+      text-transform: uppercase;
+      padding: 0 0 0 36px;
+      text-align: left;
+      margin: 0;
+    }
+    &__icons {
+      display: flex;
+      padding: 0 36px 46px 0;
+      gap: 30px;
+    }
+    &__icon {
+      text-decoration: none;
+      width: 34px;
+      height: 34px;
+      background-color: $font-header;
+      border-radius: 50%;
+      fill: $color-primary;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon:hover,
+    &__icon:focus {
+      background-color: $font-header-before;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__contact {
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: $color-secondary;
+      text-align: right;
+      justify-content: flex-end;
+      margin: 0 36px 0 0;
+      &--color {
         color: $font-header-before;
-        text-transform: uppercase;
-        padding: 0 0 91px 36px;
-        text-align: left;
-        margin: 0;
-      }
-      &__icons {
-        align-items: flex-start;
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 20px 46px 0;
-        gap: 28px;
-      }
-      &__icon {
-        text-decoration: none;
-        width: 34px;
-        height: 34px;
-        background-color: $font-header;
-        border-radius: 50%;
-        fill: $color-primary;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      &__icon:hover,
-      &__icon:focus {
-        background-color: $font-header-before;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      &__contact {
-        font-family: DM Sans;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-        color: $color-secondary;
-        text-align: right;
-        justify-content: flex-end;
-        margin: 0 20px 0 0;
-        &--color {
-          color: $font-header-before;
-          font-family: DM Sans;
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 30px;
-          letter-spacing: 0.02em;
-        }
-      }
-      &__ending {
-        flex-wrap: wrap;
         font-family: DM Sans;
         font-size: 14px;
-        font-weight: 700;
-        line-height: 1.85;
+        font-weight: 500;
+        line-height: 30px;
         letter-spacing: 0.02em;
-        text-align: center;
-        color: $font-color-subtitle;
-        margin: 22px 91px 25px 79px;
       }
     }
+    &__ending {
+      flex-wrap: wrap;
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $font-color-subtitle;
+      margin: 22px 91px 25px 79px;
+    }
+    &__iconss {
+      display: flex;
+      position: absolute;
+      margin-top: 0;
+      margin-left: 468px;
+      width: 320px;
+    }
   }
-
+  }
 
 
 @media (min-width: 1200px) {
