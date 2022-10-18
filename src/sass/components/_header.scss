@@ -2,6 +2,8 @@
   background-color: $background-color-header;
   padding: 6px 20px 0 20px;
   height: 502px;
+  overflow: hidden;
+  min-width: 320px;
   &__wrap {
     position: relative;
     margin: 0 auto;
@@ -351,6 +353,10 @@
   &__item:first-child {
     color: #d41443;
   }
+  &__item:hover{
+    cursor: pointer;
+    color: #d41443;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu {
@@ -477,7 +483,7 @@
       position: relative;
       fill: $color-primary;
       top: 10px;
-      left: 25px;
+      left: 30px;
       z-index: -1;
     }
   }
@@ -587,7 +593,7 @@
       height: 30px;
       width: 30px;
       top: 24px;
-      left: 40px;
+      left: 55px;
     }
   }
   .block {
