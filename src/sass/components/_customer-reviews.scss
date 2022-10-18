@@ -15,19 +15,18 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
-    // text-decoration: 1px solid $underline;
-    // text-decoration-line:underline;
-    // text-underline-offset:10px;
     text-align: center;
     display: flex;
     justify-content: center;
-    &::before {
-      background-image: url('../images/svg/symbol-defs.svg#icon-quote-mark');
+    
+    &:before {
+      content:'';
+      background-image: url("/src/images/svg/symbol-defs.svg#icon-quote-mark");
       width: 54px;
       height: 40px;
       position: relative;
     }
-    &::after {
+    &:after {
       background-image: repeating-linear-gradient(to bottom, red 30px, blue 1px);
       width: 100%;
     }
@@ -50,6 +49,7 @@
   &__home {
     display: flex;
     justify-content: center;
+    gap:18px;
   }
   &__svg {
     max-width: 18px;
