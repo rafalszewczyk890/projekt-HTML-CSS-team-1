@@ -18,10 +18,8 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    
+
     &:before {
-      content:'';
-      background-image: url("/src/images/svg/symbol-defs.svg#icon-quote-mark");
       width: 54px;
       height: 40px;
       position: relative;
@@ -49,7 +47,7 @@
   &__home {
     display: flex;
     justify-content: center;
-    gap:18px;
+    gap: 18px;
   }
   &__svg {
     max-width: 18px;

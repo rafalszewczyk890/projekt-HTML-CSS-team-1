@@ -1790,8 +1790,6 @@ a {
   justify-content: center;
 }
 .review__text:before {
-  content: "";
-  background-image: url("/src/images/svg/symbol-defs.svg#icon-quote-mark");
   width: 54px;
   height: 40px;
   position: relative;
