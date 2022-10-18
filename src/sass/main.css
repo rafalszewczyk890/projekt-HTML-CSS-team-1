@@ -879,15 +879,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     gap: 92px;
-    flex-wrap: wrap;
   }
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -921,7 +915,7 @@ a {
     letter-spacing: 0.06em;
     color: #d41443;
     text-transform: uppercase;
-    padding: 0 0 0 36px;
+    padding: 0 0 91px 36px;
     text-align: left;
     margin: 0;
   }
@@ -1002,24 +996,26 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 247px;
     gap: 258px;
+    position: relative;
   }
   .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    text-align: left;
   }
   .footer__tittle {
-    position: absolute;
     min-width: 700px;
     text-align: left;
     display: inline-block;
@@ -1030,9 +1026,11 @@ a {
     letter-spacing: 0.04em;
     color: #ffa5ba;
     text-transform: uppercase;
-    margin: 0 0 115px 0;
+    margin: 0 0 0 115px;
+    padding-bottom: 15px;
   }
   .footer__text {
+    min-width: 700px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1043,9 +1041,8 @@ a {
     letter-spacing: 0.06em;
     color: #d41443;
     text-transform: uppercase;
-    padding: 0 0 0 115px;
+    margin: 0 0 0 115px;
     text-align: left;
-    margin: 0;
   }
   .footer__icons {
     -webkit-box-pack: end;
@@ -1054,7 +1051,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 121px 51px 0;
     gap: 24px;
   }
   .footer__icon {
@@ -1101,6 +1097,15 @@ a {
     text-align: center;
     color: #907e82;
     margin: 9px 0 10px 0;
+  }
+  .footer__iconss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
   }
 }
 .contacts {
