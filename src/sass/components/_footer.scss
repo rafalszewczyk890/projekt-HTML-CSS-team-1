@@ -99,6 +99,7 @@
   .footer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 92px;
     &__container {
       flex-direction: column;
@@ -200,6 +201,7 @@
     display: inline-block;
     justify-content: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     max-height: 247px;
     gap: 258px;
     position: relative;
