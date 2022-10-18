@@ -18,11 +18,14 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    position: relative;
 
     &:before {
+      content: '';
+      background-image: url('../images/svg.svg');
       width: 54px;
       height: 40px;
-      position: relative;
+      position: absolute;
     }
     &:after {
       background-image: repeating-linear-gradient(to bottom, red 30px, blue 1px);
