@@ -403,6 +403,7 @@ a {
 .products__item {
   position: relative;
   width: 100%;
+  max-width: 450px;
   height: 485px;
   border-radius: 24px;
   margin-bottom: 130px;
@@ -832,6 +833,7 @@ a {
 .contacts__card {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
+  max-width: 450px;
   background-color: #fff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
