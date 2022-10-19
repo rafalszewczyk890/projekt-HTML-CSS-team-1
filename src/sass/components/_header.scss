@@ -156,7 +156,7 @@
   z-index: 6;
 }
 .modal {
-  width: 528px;
+  width: 500px;
   min-height: 581px;
   background-color: $background-color-header;
   margin: auto;
@@ -173,8 +173,8 @@
   }
   &__button {
     display: block;
-    width: 160px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
     background-color: $color-primary;
     font-family: 'DM Sans';
     font-weight: 700;
@@ -183,7 +183,7 @@
     color: $font-header-before;
     position: relative;
     top: 10px;
-    right: -360px;
+    right: -460px;
   }
   &__button:hover {
     cursor: pointer;
@@ -353,7 +353,7 @@
   &__item:first-child {
     color: #d41443;
   }
-  &__item:hover{
+  &__item:hover {
     cursor: pointer;
     color: #d41443;
   }
@@ -377,6 +377,7 @@
     &__arrow {
       position: relative;
       top: 2px;
+      right: -8px;
       fill: $font-header-before;
     }
   }
