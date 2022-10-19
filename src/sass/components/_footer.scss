@@ -27,8 +27,6 @@
       color: #d41443;
     }
   }
-  &__icons {
-  }
   &__icon {
     background-color: $font-header;
     fill: $color-primary;
@@ -84,6 +82,45 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    &__header {
+      width: 380px;
+      &__secondary {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 100%;
+      }
+      &__primary {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 91px;
+    }
+    &__tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    &__list {
+      margin-top: 0;
+    }
+  }
+}
 // .footer__line {
 //   border: $footer-line solid 1px;
 // }
