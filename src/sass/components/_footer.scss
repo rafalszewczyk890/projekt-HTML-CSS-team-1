@@ -119,6 +119,29 @@
     &__list {
       margin-top: 0;
     }
+    &__copytext {
+      width: 100%;
+    }
+    &__contact__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__header {
+      width: 500px;
+      &__primary {
+        width: 100%;
+      }
+    }
+    &__copytext {
+      width: 100%;
+    }
+    &__contact__text {
+      font-size: 16px;
+    }
   }
 }
 // .footer__line {

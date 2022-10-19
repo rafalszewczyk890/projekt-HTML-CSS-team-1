@@ -785,6 +785,26 @@ a {
   .footer__list {
     margin-top: 0;
   }
+  .footer__copytext {
+    width: 100%;
+  }
+  .footer__contact__text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__header {
+    width: 500px;
+  }
+  .footer__header__primary {
+    width: 100%;
+  }
+  .footer__copytext {
+    width: 100%;
+  }
+  .footer__contact__text {
+    font-size: 16px;
+  }
 }
 .contacts {
   padding-top: 86px;
