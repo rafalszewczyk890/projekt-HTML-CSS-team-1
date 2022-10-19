@@ -324,8 +324,8 @@ a {
   .flex-center {
     justify-content: flex-start;
   }
-  .about-achievements {
-    gap: 30px;
+  .about-achievements__list {
+    gap: 110px;
   }
   .about-achievements__items {
     width: 330px;
