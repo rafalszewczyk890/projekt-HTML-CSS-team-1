@@ -6,37 +6,52 @@
     margin: 0 auto;
     display: block;
     margin-top: 80px;
+    margin-bottom: 15px;
     width: 85px;
     height: 85px;
   }
+  &__box {
+    position: relative;
+    height: 308px;
+    margin-bottom: 30px;
+  }
+
+  &__text--linear {
+    background: repeating-linear-gradient(#fafafa, #fafafa 29px, #e1e1e1 30px, #e1e1e1 31px);
+    position: absolute;
+    z-index: -2;
+  }
+
   &__text {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
-    // text-decoration: 1px solid $underline;
-    // text-decoration-line:underline;
-    // text-underline-offset:10px;
     text-align: center;
+    margin: 43px 66px 26px 66px;
     display: flex;
     justify-content: center;
-    &::before {
-      background-image: url('../images/svg/symbol-defs.svg#icon-quote-mark');
+    text-align: center;
+
+    &:before {
+      content: '';
+      background-image: url('../images/svg.svg');
       width: 54px;
       height: 40px;
-      position: relative;
-    }
-    &::after {
-      background-image: repeating-linear-gradient(to bottom, red 30px, blue 1px);
-      width: 100%;
+      position: absolute;
+      top: -20px;
+      left: 0px;
+      z-index: -1;
     }
   }
+
   &__background {
     background-color: #fafafa;
-    padding: 50px;
-    margin-top: 29px;
-    margin-bottom: 29px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
   }
   &__dots {
     display: flex;
@@ -50,6 +65,7 @@
   &__home {
     display: flex;
     justify-content: center;
+    gap: 18px;
   }
   &__svg {
     max-width: 18px;
@@ -57,22 +73,41 @@
 }
 @media screen and (min-width: 768px) {
   .review {
+    &__box {
+      height: 164px;
+    }
     &__text {
       font-size: 14px;
+      letter-spacing: 0.08em;
     }
     &__data {
       font-size: 14px;
+    }
+    &__text--linear {
+      background: repeating-linear-gradient(#fafafa, #fafafa 31px, #e1e1e1 32px, #e1e1e1 33px);
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .review {
+    &__box {
+      height: 138px;
+    }
     &__text {
       font-size: 16px;
+      margin: 37px 80px 34px 80px;
+      letter-spacing: 0.08em;
+      &:before {
+        top:-10px;
+        left: -30px;
+      }
     }
     &__data {
       font-size: 16px;
+    }
+    &__text--linear {
+      background: repeating-linear-gradient(#fafafa, #fafafa 34px, #e1e1e1 35px, #e1e1e1 36px);
     }
   }
 }
