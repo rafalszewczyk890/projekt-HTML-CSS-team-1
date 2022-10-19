@@ -59,6 +59,10 @@ a {
     width: 1040px;
   }
 }
+.for__robots {
+  display: none;
+}
+
 .about {
   background-color: #fff5f6;
   padding-bottom: 145px;
