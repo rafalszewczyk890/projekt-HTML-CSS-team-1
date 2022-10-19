@@ -667,7 +667,7 @@ a {
 }
 
 .footer {
-  background: #fff5f6;
+  background: rgba(255, 245, 246, 0.6980392157);
 }
 .footer__header {
   display: flex;
