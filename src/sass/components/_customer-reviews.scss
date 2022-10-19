@@ -99,7 +99,7 @@
       margin: 37px 80px 34px 80px;
       letter-spacing: 0.08em;
       &:before {
-        top:-10px;
+        top: -10px;
         left: -30px;
       }
     }
@@ -109,5 +109,11 @@
     &__text--linear {
       background: repeating-linear-gradient(#fafafa, #fafafa 34px, #e1e1e1 35px, #e1e1e1 36px);
     }
+  }
+}
+
+@media screen and (max-width: 354px) {
+  .review__text {
+    font-size: 10px;
   }
 }
