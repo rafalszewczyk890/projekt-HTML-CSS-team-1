@@ -222,7 +222,9 @@
     justify-content: flex-start;
   }
   .about-achievements {
-    gap: 30px;
+    &__list {
+      gap: 110px;
+    }
     &__items {
       width: 330px;
     }
