@@ -191,26 +191,220 @@
 }
 
 
-@media (min-width: 1200px) {
+.footer__line {
+  border: $footer-line solid 1px;
+}
+@media (min-width: 305px) {
   footer {
     background-color: $background-color-how;
     width: 100%;
   }
   .footer {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 247px;
+    gap: 43px;
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__tittle {
+      text-align: start;
+      display: inline-block;
+      font-family: Titan One;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+      color: $font-header;
+      text-transform: uppercase;
+      padding: 0 66px 17px 22px;
+    }
+    &__text {
+      justify-content: flex-start;
+      font-family: Titan One;
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.06em;
+      color: $font-header-before;
+      text-transform: uppercase;
+      padding: 0 100px 0 20px;
+      text-align: left;
+      margin: 0;
+    }
+    &__icons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 20px 46px 0;
+      gap: 28px;
+    }
+    &__icon {
+      text-decoration: none;
+      width: 34px;
+      height: 34px;
+      background-color: $font-header;
+      border-radius: 50%;
+      fill: $color-primary;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon:hover,
+    &__icon:focus {
+      background-color: $font-header-before;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__contact {
+      font-family: DM Sans;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: $color-secondary;
+      text-align: right;
+      justify-content: flex-end;
+      margin: 0 20px 0 0;
+      &--color {
+        color: $font-header-before;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+      }
+    }
+    &__ending {
+      flex-wrap: wrap;
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $font-color-subtitle;
+      margin: 22px 91px 25px 79px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    background-color: $background-color-how;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 92px;
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__tittle {
+      max-width: 400px;
+      text-align: left;
+      display: inline-block;
+      font-family: Titan One;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.04em;
+      color: $font-header;
+      text-transform: uppercase;
+      padding: 0 0 16px 36px;
+    }
+    &__text {
+      max-width: 400px;
+      justify-content: flex-start;
+      font-family: Titan One;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.145;
+      letter-spacing: 0.06em;
+      color: $font-header-before;
+      text-transform: uppercase;
+      padding: 0 0 91px 36px;
+      text-align: left;
+      margin: 0;
+    }
+    &__icons {
+      display: flex;
+      padding: 0 36px 46px 0;
+      gap: 30px;
+    }
+    &__icon {
+      text-decoration: none;
+      width: 34px;
+      height: 34px;
+      background-color: $font-header;
+      border-radius: 50%;
+      fill: $color-primary;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon:hover,
+    &__icon:focus {
+      background-color: $font-header-before;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__contact {
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: $color-secondary;
+      text-align: right;
+      justify-content: flex-end;
+      margin: 0 36px 0 0;
+      &--color {
+        color: $font-header-before;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+      }
+    }
+    &__ending {
+      flex-wrap: wrap;
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: $font-color-subtitle;
+      margin: 22px 91px 25px 79px;
+    }
+    &__iconss {
+      display: flex;
+      position: absolute;
+      margin-top: 0;
+      margin-left: 468px;
+      width: 320px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  footer {
+    background-color: $background-color-how;
+    width: 100%;
+  }
+  .footer {
+    display: inline-block;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-height: 247px;
     gap: 258px;
     position: relative;
 
     
     &__container {
       flex-direction: column;
-      justify-content: center;
+     
     }
     &__tittle {
-      position: absolute;
       min-width: 700px;
       text-align: left;
       display: inline-block;
@@ -221,9 +415,11 @@
       letter-spacing: 0.04em;
       color: $font-header;
       text-transform: uppercase;
-      margin: 0 0 115px 0;
+      margin: 0 0 0 115px;
+      padding-bottom:15px;
     }
     &__text {
+      min-width: 700px;
       justify-content: flex-start;
       font-family: Titan One;
       font-size: 58px;
@@ -232,14 +428,14 @@
       letter-spacing: 0.06em;
       color: $font-header-before;
       text-transform: uppercase;
-      padding: 0 0 0 115px;
+      margin: 0 0 0 115px;
       text-align: left;
-      margin: 0;
+      padding-bottom: 97px;
+    
     }
     &__icons {
       justify-content: flex-end;
       display: flex;
-      padding: 0 121px 51px 0;
       gap: 24px;
     }
     &__icon {
@@ -270,7 +466,7 @@
         min-width: 502px;
         color: $font-header-before;
         font-family: DM Sans;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0.02em;
@@ -286,5 +482,10 @@
       color: $font-color-subtitle;
       margin: 9px 0 10px 0;
     }
-   
+    &__iconss {
+      display: flex;
+      position: absolute;
+      right:115px;
+      top:0;
+    }
 }}
